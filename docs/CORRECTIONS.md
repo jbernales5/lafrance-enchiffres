@@ -35,4 +35,4 @@ Un rafraîchissement qui ne change aucune valeur ne change pas non plus `fetched
 
 ## Historique
 
-Les corrections notables sont listées dans `CHANGELOG.md`. Le détail est dans l'historique Git : chaque série est un fichier texte, et son diff se lit ligne à ligne.
+Tout est dans l'historique Git : chaque série est un fichier texte, et son diff se lit ligne à ligne. Un commit `fix(data):` cite l'issue qui l'a déclenché.

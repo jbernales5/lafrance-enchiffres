@@ -35,11 +35,11 @@ Branche : `feat/<nom>` ou `fix/<nom>`.
 ```bash
 npm install
 npm run dev          # http://localhost:3000
-npm run validate     # le contrat de données
-npm run typecheck
+npm run check        # contrat de données, types, formatage — ce que la CI exécute
 npm run build        # ce que Vercel exécutera
-npm run format       # Prettier, exigé par la CI
 ```
+
+`npm install` installe un hook de pré-commit. À chaque commit, le formatage des fichiers indexés est corrigé et réindexé, puis `npm run check` est exécuté : c'est la même commande que l'intégration continue, pour qu'elles ne puissent pas diverger. Un commit qui casserait la CI est donc refusé sur votre machine. Pour passer outre ponctuellement, `git commit --no-verify`.
 
 Ce qui ne se négocie pas sans raison écrite dans la pull request :
 

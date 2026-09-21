@@ -213,7 +213,9 @@ export function ContributeCta() {
             La contribution est ouverte
           </h2>
           <p className="mt-3 text-pretty text-muted-foreground">
-            Code, données et discussions sont sur GitHub. Vous pouvez contribuer et apporter des corrections et modifications librement via le dépôt de code GitHub.
+            Code, données et discussions sont sur GitHub. Vous pouvez contribuer
+            et apporter des corrections et modifications librement via le dépôt
+            de code GitHub.
           </p>
         </div>
         <div className="grid gap-3 sm:grid-cols-3 lg:grid-cols-1">

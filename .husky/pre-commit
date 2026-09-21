@@ -1,0 +1,5 @@
+# Le formatage des fichiers indexés est corrigé et réindexé : c'est mécanique.
+npx lint-staged
+
+# Puis exactement ce que la CI vérifie, moins le build : contrat de données, types, formatage.
+npm run check
