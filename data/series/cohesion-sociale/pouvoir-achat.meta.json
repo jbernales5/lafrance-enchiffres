@@ -1,0 +1,25 @@
+{
+  "source": {
+    "publisher": "Insee",
+    "url": "https://www.insee.fr/fr/statistiques/8988934",
+    "downloadUrls": [
+      "https://api.insee.fr/melodi/data/DD_CNA_AGREGATS?STO=_PAM_UC&STO=_PAA_UC&maxResult=5000"
+    ],
+    "dataset": "DD_CNA_AGREGATS",
+    "codes": [
+      "_PAM_UC",
+      "_PAA_UC"
+    ],
+    "license": "etalab-2.0"
+  },
+  "unit": "indice, base 100 en 2015",
+  "frequency": "annual",
+  "seriesLabels": {
+    "FRA": "Pouvoir d'achat du RDB par unité de consommation",
+    "arbitrable": "Pouvoir d'achat arbitrable par unité de consommation"
+  },
+  "notes": "Comptes nationaux annuels base 2020 (Melodi, jeu DD_CNA_AGREGATS) : l'Insee ne diffuse que les évolutions annuelles en %, cumulées ici en indice base 100 en 2015 ; le pouvoir d'achat arbitrable exclut les dépenses pré-engagées (loyers, assurances, abonnements…).",
+  "lastObservation": "2025",
+  "script": "scripts/fetch/insee.mjs",
+  "fetchedAt": "2026-09-20"
+}

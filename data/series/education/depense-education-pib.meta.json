@@ -1,0 +1,24 @@
+{
+  "source": {
+    "publisher": "Eurostat",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_exp/default/table",
+    "downloadUrls": [
+      "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10a_exp?format=JSON&lang=EN&geo=FR&geo=DE&geo=IT&geo=ES&geo=EU27_2020&cofog99=GF09&na_item=TE&sector=S13&unit=PC_GDP&sinceTimePeriod=1995"
+    ],
+    "dataset": "gov_10a_exp",
+    "license": "eurostat"
+  },
+  "unit": "% du PIB",
+  "frequency": "annual",
+  "seriesLabels": {
+    "FRA": "France",
+    "DEU": "Allemagne",
+    "ITA": "Italie",
+    "ESP": "Espagne",
+    "EU27": "Union européenne (27)"
+  },
+  "script": "scripts/fetch/eurostat.mjs",
+  "notes": "Dépense totale des administrations publiques en fonction « Enseignement » (COFOG GF09, SEC 2010), de la maternelle au supérieur, recherche universitaire comprise. C'est l'argent public seul : la dépense intérieure d'éducation de la DEPP ajoute les familles et les entreprises, et se situe donc plus haut.",
+  "lastObservation": "2024",
+  "fetchedAt": "2026-09-20"
+}

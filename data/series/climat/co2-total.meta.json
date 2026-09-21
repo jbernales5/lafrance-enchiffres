@@ -1,0 +1,33 @@
+{
+  "source": {
+    "publisher": "Our World in Data",
+    "upstream": "Global Carbon Budget (2025)",
+    "url": "https://ourworldindata.org/grapher/annual-co2-emissions-per-country",
+    "downloadUrls": [
+      "https://ourworldindata.org/grapher/annual-co2-emissions-per-country.csv?v=1&csvType=filtered&useColumnShortNames=true&tab=line&time=earliest..latest&country=FRA~DEU~ITA~ESP~GBR~USA~CHN~IND~OWID_WRL"
+    ],
+    "dataset": "annual-co2-emissions-per-country",
+    "citation": "Global Carbon Budget (2025) – with major processing by Our World in Data. “Annual CO₂ emissions” [dataset]. Global Carbon Project, “Global Carbon Budget v15” [original data].",
+    "lastUpdated": "2025-11-13",
+    "title": "Annual CO₂ emissions",
+    "license": "owid",
+    "upstreamLicense": "cc-by-4.0"
+  },
+  "unit": "Mt CO₂",
+  "frequency": "annual",
+  "lastObservation": "2024",
+  "seriesLabels": {
+    "FRA": "France",
+    "DEU": "Allemagne",
+    "ITA": "Italie",
+    "ESP": "Espagne",
+    "GBR": "Royaume-Uni",
+    "USA": "États-Unis",
+    "CHN": "Chine",
+    "IND": "Inde",
+    "WLD": "Monde"
+  },
+  "script": "scripts/fetch/owid.mjs",
+  "notes": "Émissions annuelles territoriales de CO₂ issues des énergies fossiles et de l'industrie, en millions de tonnes.",
+  "fetchedAt": "2026-09-20"
+}

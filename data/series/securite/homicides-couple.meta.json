@@ -1,0 +1,35 @@
+{
+  "source": {
+    "publisher": "Eurostat",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/crim_hom_vrel/default/table",
+    "downloadUrls": [
+      "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/crim_hom_vrel?format=JSON&lang=EN&geo=FR&geo=DE&geo=IT&geo=ES&geo=EU27_2020&unit=P_HTHAB&pers_cat=IPTN&pers_cat=FAM&sex=F&sex=M&sinceTimePeriod=2010"
+    ],
+    "dataset": "crim_hom_vrel",
+    "license": "eurostat"
+  },
+  "unit": "victimes pour 100 000 habitants",
+  "frequency": "annual",
+  "seriesLabels": {
+    "FRA-partenaire-femmes": "France — femmes tuées par leur partenaire",
+    "FRA-partenaire-hommes": "France — hommes tués par leur partenaire",
+    "FRA-famille-femmes": "France — femmes tuées par un membre de leur famille",
+    "FRA-famille-hommes": "France — hommes tués par un membre de leur famille",
+    "DEU-partenaire-femmes": "Allemagne — femmes tuées par leur partenaire",
+    "DEU-partenaire-hommes": "Allemagne — hommes tués par leur partenaire",
+    "DEU-famille-femmes": "Allemagne — femmes tuées par un membre de leur famille",
+    "DEU-famille-hommes": "Allemagne — hommes tués par un membre de leur famille",
+    "ITA-partenaire-femmes": "Italie — femmes tuées par leur partenaire",
+    "ITA-partenaire-hommes": "Italie — hommes tués par leur partenaire",
+    "ITA-famille-femmes": "Italie — femmes tuées par un membre de leur famille",
+    "ITA-famille-hommes": "Italie — hommes tués par un membre de leur famille",
+    "ESP-partenaire-femmes": "Espagne — femmes tuées par leur partenaire",
+    "ESP-partenaire-hommes": "Espagne — hommes tués par leur partenaire",
+    "ESP-famille-femmes": "Espagne — femmes tuées par un membre de leur famille",
+    "ESP-famille-hommes": "Espagne — hommes tués par un membre de leur famille"
+  },
+  "script": "scripts/fetch/eurostat.mjs",
+  "notes": "Victimes d'homicide volontaire classées selon leur lien avec l'auteur : partenaire ou ex-partenaire intime (IPTN), autre membre de la famille (FAM), pour 100 000 habitants. Données de police et de justice transmises à Eurostat, donc dépendantes de la qualification retenue par chaque pays et de la connaissance de l'auteur. « Féminicide » n'est pas une catégorie statistique : l'indicateur officiellement comparable est le nombre de victimes tuées par leur partenaire ou ex-partenaire, décliné par sexe.",
+  "lastObservation": "2024",
+  "fetchedAt": "2026-09-20"
+}

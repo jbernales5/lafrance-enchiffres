@@ -1,0 +1,27 @@
+{
+  "source": {
+    "publisher": "Eurostat",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/ilc_mded01/default/table",
+    "downloadUrls": [
+      "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_mded01?format=JSON&lang=EN&geo=FR&geo=DE&geo=IT&geo=ES&geo=EU27_2020&hhcomp=TOTAL&rskpovth=TOTAL&unit=PC&sinceTimePeriod=2003",
+      "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_mded01?format=JSON&lang=EN&geo=FR&hhcomp=TOTAL&rskpovth=B_60&rskpovth=A_60&unit=PC&sinceTimePeriod=2003"
+    ],
+    "dataset": "ilc_mded01",
+    "license": "eurostat"
+  },
+  "unit": "% du revenu disponible",
+  "frequency": "annual",
+  "seriesLabels": {
+    "FRA": "France",
+    "DEU": "Allemagne",
+    "ITA": "Italie",
+    "ESP": "Espagne",
+    "EU27": "Union européenne (27)",
+    "FRA-pauvres": "France — ménages sous le seuil de pauvreté",
+    "FRA-autres": "France — ménages au-dessus du seuil"
+  },
+  "script": "scripts/fetch/eurostat.mjs",
+  "notes": "Part des dépenses de logement dans le revenu disponible des ménages (EU-SILC). Les dépenses de logement comprennent le loyer ou les remboursements d'emprunt, les charges, l'énergie, l'eau et l'entretien courant, nettes des aides au logement. Le seuil de pauvreté est fixé à 60 % du niveau de vie médian.",
+  "lastObservation": "2025",
+  "fetchedAt": "2026-09-20"
+}

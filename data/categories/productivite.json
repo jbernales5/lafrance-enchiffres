@@ -1,0 +1,227 @@
+{
+  "slug": "productivite",
+  "order": 2,
+  "title": "Productivité, croissance et compétitivité",
+  "short": "Productivité et emploi",
+  "lead": "Indicateurs sur la productivité, le nombre d'heures travaillées et la part des gens qui travaillent. Les indicateurs d'inégalités sont dans le thème Cohésion sociale.",
+  "keyFigure": {
+    "chart": "chomage",
+    "label": "taux de chômage au sens du BIT",
+    "series": "ensemble",
+    "unit": "%"
+  },
+  "cautions": [
+    "PIB par habitant : toujours en parité de pouvoir d'achat et en volume, jamais en euros courants, sinon le graphe mesure l'inflation.",
+    "Le PIB par habitant et la productivité horaire se lisent ensemble : l'écart entre les deux, c'est le temps de travail et le taux d'emploi.",
+    "Le taux de chômage au sens du BIT ne compte pas le halo autour du chômage (personnes qui souhaitent travailler sans remplir tous les critères)."
+  ],
+  "charts": [
+    {
+      "id": "chomage",
+      "title": "Taux de chômage",
+      "subtitle": "Au sens du Bureau international du travail, trimestriel, France hors Mayotte",
+      "file": "productivite/chomage",
+      "perspectives": {
+        "france": [
+          "ensemble"
+        ],
+        "europe": [
+          "femmes",
+          "hommes"
+        ],
+        "monde": [
+          "ensemble",
+          "15-24",
+          "25-49",
+          "50-plus"
+        ]
+      },
+      "zeroBased": true,
+      "perspectiveLabels": {
+        "france": "Ensemble",
+        "europe": "Par sexe",
+        "monde": "Par âge"
+      },
+      "variants": [
+        {
+          "id": "europe-eurostat",
+          "label": "Voisins européens",
+          "file": "productivite/chomage-europe",
+          "warning": "Source différente : Eurostat plutôt que l'Insee, en moyenne annuelle. La définition reste celle du Bureau international du travail, donc les niveaux sont cohérents avec la courbe France des autres vues.",
+          "subtitle": "Taux harmonisé au sens du Bureau international du travail, 15-74 ans, moyenne annuelle"
+        },
+        {
+          "id": "monde-oit",
+          "label": "Monde (estimations)",
+          "file": "productivite/chomage-monde",
+          "warning": "Attention, ce ne sont pas des mesures : ce sont des estimations modélisées de l'Organisation internationale du travail, diffusées par la Banque mondiale, produites pour couvrir tous les pays. Elles ne viennent pas des enquêtes emploi nationales et ne se comparent pas directement aux autres vues.",
+          "subtitle": "Estimations modélisées de l'Organisation internationale du travail, moyenne annuelle"
+        }
+      ]
+    },
+    {
+      "id": "halo",
+      "title": "Personnes sans emploi non comptées comme chômeurs",
+      "subtitle": "Milliers de personnes qui souhaitent travailler sans être comptées au chômage, France entière",
+      "file": "productivite/halo-chomage",
+      "zeroBased": true,
+      "note": "Pour être chômeur au sens du Bureau international du travail, il faut avoir cherché un emploi le mois précédent et être disponible sous deux semaines. Ces personnes souhaitent un emploi mais ne remplissent pas l'un des deux critères : elles ne sont ni en emploi, ni comptées dans le taux de chômage."
+    },
+    {
+      "id": "pib-par-habitant",
+      "title": "PIB par habitant",
+      "subtitle": "En dollars internationaux, parité de pouvoir d'achat, prix constants",
+      "file": "productivite/pib-par-habitant",
+      "perspectives": {
+        "france": [
+          "FRA"
+        ],
+        "europe": [
+          "FRA",
+          "DEU",
+          "ITA",
+          "ESP",
+          "GBR"
+        ],
+        "monde": [
+          "FRA",
+          "USA",
+          "CHN",
+          "JPN",
+          "IND"
+        ]
+      },
+      "zeroBased": true
+    },
+    {
+      "id": "productivite-horaire",
+      "title": "Productivité horaire",
+      "subtitle": "PIB par heure travaillée, dollars en parité de pouvoir d'achat",
+      "file": "productivite/productivite-horaire",
+      "perspectives": {
+        "france": [
+          "FRA"
+        ],
+        "europe": [
+          "FRA",
+          "DEU",
+          "ITA",
+          "ESP",
+          "GBR"
+        ],
+        "monde": [
+          "FRA",
+          "USA",
+          "JPN",
+          "KOR",
+          "CHN"
+        ]
+      },
+      "zeroBased": true
+    },
+    {
+      "id": "taux-emploi",
+      "title": "Taux d'emploi des 15-64 ans et des 55-64 ans",
+      "subtitle": "Part de la tranche d'âge qui occupe un emploi. La vue Europe compare les 55-64 ans.",
+      "file": "productivite/taux-emploi",
+      "perspectives": {
+        "france": [
+          "FRA-15-64",
+          "FRA-55-64"
+        ],
+        "europe": [
+          "FRA-55-64",
+          "DEU-55-64",
+          "ITA-55-64",
+          "ESP-55-64",
+          "EU27-55-64"
+        ]
+      }
+    },
+    {
+      "id": "industrie",
+      "title": "Poids de l'industrie manufacturière",
+      "subtitle": "Part dans la valeur ajoutée totale, en %",
+      "file": "productivite/industrie-manufacturiere",
+      "perspectives": {
+        "france": [
+          "FRA"
+        ],
+        "europe": [
+          "FRA",
+          "DEU",
+          "ITA",
+          "ESP",
+          "EU27"
+        ]
+      },
+      "zeroBased": true
+    },
+    {
+      "id": "recherche",
+      "title": "Dépenses de recherche et développement",
+      "subtitle": "En % du PIB. L'objectif européen de Lisbonne était 3 %.",
+      "file": "productivite/depenses-rd",
+      "perspectives": {
+        "france": [
+          "FRA"
+        ],
+        "europe": [
+          "FRA",
+          "DEU",
+          "ITA",
+          "ESP",
+          "GBR"
+        ],
+        "monde": [
+          "FRA",
+          "USA",
+          "KOR",
+          "CHN"
+        ]
+      },
+      "thresholds": [
+        {
+          "value": 3,
+          "label": "3 % (objectif de Lisbonne)"
+        }
+      ],
+      "zeroBased": true
+    },
+    {
+      "id": "creations",
+      "title": "Créations d'entreprises",
+      "subtitle": "Milliers par an, France entière. La vue par secteur détaille les principaux secteurs.",
+      "file": "entreprises/creations",
+      "zeroBased": true,
+      "perspectives": {
+        "france": [
+          "ensemble",
+          "hors-micro"
+        ],
+        "europe": [
+          "industrie",
+          "construction",
+          "commerce",
+          "hebergement-restauration",
+          "enseignement-sante"
+        ]
+      },
+      "perspectiveLabels": {
+        "france": "Ensemble",
+        "europe": "Par secteur"
+      }
+    },
+    {
+      "id": "defaillances",
+      "title": "Défaillances d'entreprises",
+      "subtitle": "Milliers d'entreprises placées en redressement ou en liquidation judiciaire par un tribunal, par an, France",
+      "file": "entreprises/defaillances",
+      "zeroBased": true
+    }
+  ],
+  "hero": {
+    "chart": "chomage",
+    "perspective": "france"
+  }
+}

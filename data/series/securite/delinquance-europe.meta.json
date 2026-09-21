@@ -1,0 +1,46 @@
+{
+  "source": {
+    "publisher": "Eurostat",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/crim_off_cat/default/table",
+    "downloadUrls": [
+      "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/crim_off_cat?format=JSON&lang=EN&geo=FR&geo=DE&geo=IT&geo=ES&geo=EU27_2020&unit=P_HTHAB&iccs=ICCS0101&iccs=ICCS020111&iccs=ICCS0301&iccs=ICCS0401&iccs=ICCS0501&iccs=ICCS0502&iccs=ICCS0601&sinceTimePeriod=2010"
+    ],
+    "dataset": "crim_off_cat",
+    "license": "eurostat"
+  },
+  "unit": "faits enregistrés pour 100 000 habitants",
+  "frequency": "annual",
+  "seriesLabels": {
+    "FRA-homicide": "France — homicides volontaires",
+    "FRA-coups": "France — coups et blessures graves",
+    "FRA-sexuel": "France — violences sexuelles",
+    "FRA-vol-violent": "France — vols avec violence",
+    "FRA-cambriolage": "France — cambriolages",
+    "FRA-vol": "France — vols",
+    "FRA-stupefiants": "France — infractions à la législation sur les stupéfiants",
+    "DEU-homicide": "Allemagne — homicides volontaires",
+    "DEU-coups": "Allemagne — coups et blessures graves",
+    "DEU-sexuel": "Allemagne — violences sexuelles",
+    "DEU-vol-violent": "Allemagne — vols avec violence",
+    "DEU-cambriolage": "Allemagne — cambriolages",
+    "DEU-vol": "Allemagne — vols",
+    "DEU-stupefiants": "Allemagne — infractions à la législation sur les stupéfiants",
+    "ITA-homicide": "Italie — homicides volontaires",
+    "ITA-coups": "Italie — coups et blessures graves",
+    "ITA-sexuel": "Italie — violences sexuelles",
+    "ITA-vol-violent": "Italie — vols avec violence",
+    "ITA-vol": "Italie — vols",
+    "ITA-stupefiants": "Italie — infractions à la législation sur les stupéfiants",
+    "ESP-homicide": "Espagne — homicides volontaires",
+    "ESP-coups": "Espagne — coups et blessures graves",
+    "ESP-sexuel": "Espagne — violences sexuelles",
+    "ESP-vol-violent": "Espagne — vols avec violence",
+    "ESP-cambriolage": "Espagne — cambriolages",
+    "ESP-vol": "Espagne — vols",
+    "ESP-stupefiants": "Espagne — infractions à la législation sur les stupéfiants"
+  },
+  "script": "scripts/fetch/eurostat.mjs",
+  "notes": "Infractions ENREGISTRÉES par la police et la justice, pour 100 000 habitants : ce sont des faits portés à la connaissance des institutions et inscrits dans leurs fichiers, pas des faits commis. Le niveau dépend donc autant de la délinquance réelle que de la propension des victimes à porter plainte et des pratiques d'enregistrement de chaque pays. Les définitions pénales sont harmonisées par la classification internationale des infractions à des fins statistiques (ICCS), mais elles restent imparfaitement comparables d'un pays à l'autre : les comparaisons de niveau sont fragiles, les évolutions dans le temps au sein d'un même pays sont plus solides.",
+  "lastObservation": "2024",
+  "fetchedAt": "2026-09-20"
+}

@@ -1,0 +1,36 @@
+{
+  "source": {
+    "publisher": "SSMSI (ministère de l'Intérieur)",
+    "distributor": "data.gouv.fr",
+    "url": "https://www.data.gouv.fr/datasets/service-statistique-ministeriel-de-la-securite-interieure-base-des-series-chronologiques",
+    "downloadUrls": [
+      "https://static.data.gouv.fr/resources/service-statistique-ministeriel-de-la-securite-interieure-base-des-series-chronologiques/20260915-152254/serieschrono-datagouv.csv"
+    ],
+    "dataset": "serieschrono-datagouv.csv",
+    "citation": "SSMSI, base des séries chronologiques. Mêmes séries que celles jointes aux publications « Interstats Conjoncture ».",
+    "license": "etalab-2.0"
+  },
+  "unit": "faits enregistrés par mois",
+  "frequency": "monthly",
+  "seriesLabels": {
+    "homicides": "Homicides (victimes)",
+    "violences-intrafamiliales": "Violences physiques intrafamiliales (victimes)",
+    "violences-hors-famille": "Violences physiques hors du cadre familial (victimes)",
+    "violences-sexuelles": "Violences sexuelles (victimes)",
+    "vols-avec-arme": "Vols avec arme (infractions)",
+    "vols-violents": "Vols violents sans arme (infractions)",
+    "vols-sans-violence": "Vols sans violence (victimes)",
+    "cambriolages": "Cambriolages de logement (infractions)",
+    "vols-vehicules": "Vols de véhicule (véhicules)",
+    "vols-dans-vehicules": "Vols dans les véhicules (véhicules)",
+    "vols-accessoires": "Vols d'accessoires sur véhicules (véhicules)",
+    "degradations": "Destructions et dégradations volontaires (infractions)",
+    "stupefiants-usage": "Usage de stupéfiants (mis en cause)",
+    "stupefiants-trafic": "Trafic de stupéfiants (mis en cause)",
+    "escroqueries": "Escroqueries et fraudes aux moyens de paiement (victimes)"
+  },
+  "notes": "Faits enregistrés par la police et la gendarmerie chaque mois, France entière, corrigés des variations saisonnières et des jours ouvrables (sauf les homicides, publiés bruts). Ce sont des faits enregistrés, pas des faits commis : une variation peut venir d'un changement de comportement de plainte ou d'activité des services autant que de la délinquance elle-même. L'unité de compte diffère selon l'indicateur (infraction, victime, véhicule, mis en cause) et figure dans la légende.",
+  "lastObservation": "2026-08",
+  "script": "scripts/fetch/france.mjs",
+  "fetchedAt": "2026-09-20"
+}

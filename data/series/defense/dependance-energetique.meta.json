@@ -1,0 +1,24 @@
+{
+  "source": {
+    "publisher": "Eurostat",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/nrg_ind_id/default/table",
+    "downloadUrls": [
+      "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nrg_ind_id?format=JSON&lang=EN&geo=FR&geo=DE&geo=IT&geo=ES&geo=EU27_2020&siec=TOTAL&unit=PC&sinceTimePeriod=1990"
+    ],
+    "dataset": "nrg_ind_id",
+    "license": "eurostat"
+  },
+  "unit": "% (importations nettes / consommation brute)",
+  "frequency": "annual",
+  "seriesLabels": {
+    "FRA": "France",
+    "DEU": "Allemagne",
+    "ITA": "Italie",
+    "ESP": "Espagne",
+    "EU27": "Union européenne (27)"
+  },
+  "script": "scripts/fetch/eurostat.mjs",
+  "notes": "Taux de dépendance énergétique : importations nettes rapportées à la consommation intérieure brute d'énergie (tous produits, soutes maritimes internationales incluses).",
+  "lastObservation": "2024",
+  "fetchedAt": "2026-09-20"
+}

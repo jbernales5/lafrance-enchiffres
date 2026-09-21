@@ -1,0 +1,29 @@
+{
+  "source": {
+    "publisher": "Ministère de l'Intérieur et CDSP / Sciences Po",
+    "distributor": "data.gouv.fr",
+    "url": "https://www.data.gouv.fr/datasets/elections-presidentielles-1965-2012-1",
+    "downloadUrls": [
+      "https://www.data.gouv.fr/datasets/elections-presidentielles-1965-2012-1",
+      "https://www.data.gouv.fr/datasets/elections-legislatives-1958-2012",
+      "https://www.data.gouv.fr/datasets/election-presidentielle-des-23-avril-et-7-mai-2017-resultats-definitifs-du-1er-tour-par-bureaux-de-vote",
+      "https://www.data.gouv.fr/datasets/election-presidentielle-des-10-et-24-avril-2022-resultats-definitifs-du-1er-tour",
+      "https://www.data.gouv.fr/datasets/elections-legislatives-des-12-et-19-juin-2022-resultats-definitifs-du-premier-tour",
+      "https://www.data.gouv.fr/datasets/elections-legislatives-des-11-et-18-juin-2017-resultats-du-1er-tour",
+      "https://www.data.gouv.fr/datasets/elections-legislatives-des-30-juin-et-7-juillet-2024-resultats-definitifs-du-1er-tour"
+    ],
+    "howToObtain": "Les adresses ci-dessus sont les pages des jeux de données : le fichier exact est résolu à la récupération, la ressource la plus récemment modifiée étant retenue pour chaque scrutin. Les adresses effectivement téléchargées sont listées dans data/series/FRANCE-REPORT.md.",
+    "dataset": "Résultats des élections présidentielles et législatives, premier tour",
+    "license": "etalab-2.0"
+  },
+  "unit": "% des inscrits",
+  "frequency": "annual",
+  "seriesLabels": {
+    "presidentielle": "Présidentielle (1er tour)",
+    "legislative": "Législatives (1er tour)"
+  },
+  "notes": "Abstention au premier tour, calculée comme 1 − votants / inscrits. Jusqu'en 2012, les valeurs sont agrégées à partir des fichiers de résultats par circonscription publiés par le Centre de données socio-politiques (Sciences Po) sur data.gouv.fr ; à partir de 2017, elles proviennent des fichiers de résultats définitifs du ministère de l'Intérieur (France entière, outre-mer et Français de l'étranger compris pour les législatives). Le champ n'est donc pas strictement identique sur toute la période et les valeurs antérieures à 2017 peuvent différer de quelques dixièmes des chiffres France entière du ministère. Les législatives de 1986 se sont tenues à la proportionnelle à un seul tour.",
+  "lastObservation": "2024",
+  "script": "scripts/fetch/france.mjs",
+  "fetchedAt": "2026-09-20"
+}

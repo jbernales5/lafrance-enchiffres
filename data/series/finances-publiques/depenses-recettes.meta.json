@@ -1,0 +1,29 @@
+{
+  "source": {
+    "publisher": "Eurostat",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_main/default/table",
+    "downloadUrls": [
+      "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10a_main?format=JSON&lang=EN&geo=FR&geo=DE&geo=IT&geo=ES&geo=EU27_2020&sector=S13&unit=PC_GDP&na_item=TE&na_item=TR&sinceTimePeriod=2000"
+    ],
+    "dataset": "gov_10a_main",
+    "license": "eurostat"
+  },
+  "unit": "% du PIB",
+  "frequency": "annual",
+  "seriesLabels": {
+    "FRA-depenses": "France – dépenses",
+    "FRA-recettes": "France – recettes",
+    "DEU-depenses": "Allemagne – dépenses",
+    "DEU-recettes": "Allemagne – recettes",
+    "ITA-depenses": "Italie – dépenses",
+    "ITA-recettes": "Italie – recettes",
+    "ESP-depenses": "Espagne – dépenses",
+    "ESP-recettes": "Espagne – recettes",
+    "EU27-depenses": "Union européenne (27) – dépenses",
+    "EU27-recettes": "Union européenne (27) – recettes"
+  },
+  "script": "scripts/fetch/eurostat.mjs",
+  "notes": "Dépenses totales (TE) et recettes totales (TR) des administrations publiques en comptabilité nationale (SEC 2010), en pourcentage du PIB.",
+  "lastObservation": "2025",
+  "fetchedAt": "2026-09-20"
+}

@@ -1,0 +1,25 @@
+{
+  "source": {
+    "publisher": "OCDE",
+    "edition": "Tableau de bord « PISA: Education and Skills »",
+    "url": "https://www.oecd.org/en/data/dashboards/pisa-education-and-skills/performance-trends.html",
+    "downloadUrls": [
+      "https://www.oecd.org/en/data/dashboards/pisa-education-and-skills/performance-trends.html"
+    ],
+    "howToObtain": "Le tableau de bord n'est pas diffusé sur l'API SDMX de l'OCDE : chaque vue s'exporte en CSV, une par pays de comparaison. Copies versionnées : data/sources-manuelles/pisa-ocde/.",
+    "dataset": "Mean performance in science in France, by national quarter of socio-economic status ; Socio-economic gaps in science performance in France",
+    "citation": "OCDE, Programme international pour le suivi des acquis des élèves (PISA), tableau de bord « Education and Skills ».",
+    "license": "oecd"
+  },
+  "unit": "score PISA",
+  "frequency": "annual",
+  "seriesLabels": {
+    "defavorises": "Quart le plus défavorisé",
+    "favorises": "Quart le plus favorisé",
+    "ecart": "Écart entre les deux"
+  },
+  "script": "scripts/manual/pisa.mjs",
+  "notes": "Score moyen en culture scientifique des élèves du quart le plus favorisé et du quart le plus défavorisé, selon l'indice OCDE de statut économique, social et culturel. L'écart entre les deux est l'indicateur le plus souvent cité pour situer la France : il reste parmi les plus élevés des pays de l'OCDE.",
+  "lastObservation": "2025",
+  "fetchedAt": "2026-09-20"
+}

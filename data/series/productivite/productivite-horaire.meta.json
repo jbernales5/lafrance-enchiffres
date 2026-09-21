@@ -1,0 +1,33 @@
+{
+  "source": {
+    "publisher": "Our World in Data",
+    "upstream": "Feenstra et al. – Penn World Table (2025)",
+    "url": "https://ourworldindata.org/grapher/labor-productivity-per-hour-pennworldtable",
+    "downloadUrls": [
+      "https://ourworldindata.org/grapher/labor-productivity-per-hour-pennworldtable.csv?v=1&csvType=filtered&useColumnShortNames=true&tab=line&time=earliest..latest&country=FRA~DEU~ITA~ESP~GBR~USA~CHN~JPN~KOR"
+    ],
+    "dataset": "labor-productivity-per-hour-pennworldtable",
+    "citation": "Feenstra et al. – Penn World Table (2025) – with major processing by Our World in Data. “Productivity: output per hour worked – Penn World Table – In constant international-$” [dataset]. Feenstra et al., “Penn World Table 11.0” [original data].",
+    "lastUpdated": "2025-10-09",
+    "title": "Productivity: output per hour worked",
+    "license": "owid",
+    "upstreamLicense": "cc-by-4.0"
+  },
+  "unit": "$ par heure travaillée, PPA",
+  "frequency": "annual",
+  "lastObservation": "2023",
+  "seriesLabels": {
+    "FRA": "France",
+    "DEU": "Allemagne",
+    "ITA": "Italie",
+    "ESP": "Espagne",
+    "GBR": "Royaume-Uni",
+    "USA": "États-Unis",
+    "CHN": "Chine",
+    "JPN": "Japon",
+    "KOR": "Corée du Sud"
+  },
+  "script": "scripts/fetch/owid.mjs",
+  "notes": "PIB divisé par le nombre total d'heures travaillées dans l'économie, en dollars internationaux à prix constants (Penn World Table).",
+  "fetchedAt": "2026-09-20"
+}

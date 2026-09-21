@@ -1,0 +1,124 @@
+{
+  "slug": "logement",
+  "order": 7,
+  "title": "Logement",
+  "short": "Logement",
+  "lead": "Les prix, les loyers, la construction, l'accès à la propriété, et ce que le logement pèse dans le budget des ménages selon leur revenu.",
+  "keyFigure": {
+    "chart": "prix-anciens",
+    "label": "prix des logements anciens, indice Notaires-Insee",
+    "unit": "(2015 = 100)"
+  },
+  "cautions": [
+    "Un indice de prix n'est pas un prix moyen : l'indice Notaires-Insee est à qualité constante. Aucun prix au mètre carré n'est affiché à côté.",
+    "L'indice des loyers mesure l'ensemble des loyers en cours ; les loyers de relocation bougent beaucoup plus vite.",
+    "Les permis de construire sont révisés pendant douze à dix-huit mois : on regarde la date réelle, pas la date de prise en compte."
+  ],
+  "charts": [
+    {
+      "id": "prix-anciens",
+      "title": "Prix des logements anciens",
+      "subtitle": "Indice Notaires-Insee, base 100 en 2015, trimestriel",
+      "file": "logement/prix-logements-anciens",
+      "perspectives": {
+        "france": [
+          "FRA"
+        ],
+        "europe": [
+          "FRA",
+          "idf",
+          "province"
+        ],
+        "monde": [
+          "FRA",
+          "appartements",
+          "maisons"
+        ]
+      },
+      "perspectiveLabels": {
+        "france": "France",
+        "europe": "Île-de-France / province",
+        "monde": "Appartements / maisons"
+      }
+    },
+    {
+      "id": "prix-revenu",
+      "title": "Prix des logements rapportés au revenu des ménages",
+      "subtitle": "Prix des logements rapporté au revenu disponible par habitant, indice base 100 en 2015",
+      "file": "logement/prix-revenu",
+      "note": "L'indice compare le prix au revenu, pas le prix tout court. Il monte quand les logements deviennent plus chers que ce que gagnent les ménages. Les repères de mandat et les repères d'événements mondiaux se superposent à la courbe : la bascule de 2022 coïncide avec la remontée des taux directeurs."
+    },
+    {
+      "id": "loyers",
+      "title": "Indice des loyers",
+      "subtitle": "Tous secteurs, France métropolitaine, base 100 en janvier 2019",
+      "file": "logement/indice-loyers",
+      "perspectives": {
+        "france": [
+          "FRA"
+        ],
+        "europe": [
+          "FRA",
+          "irl"
+        ]
+      },
+      "perspectiveLabels": {
+        "france": "Indice des loyers",
+        "europe": "Avec l'IRL"
+      },
+      "note": "L'indice de référence des loyers (IRL) plafonne les hausses en cours de bail ; il est rebasé ici à 100 au T1 2019 pour être comparable."
+    },
+    {
+      "id": "construction",
+      "title": "Logements autorisés et mis en chantier",
+      "subtitle": "Milliers, cumul sur douze mois",
+      "file": "logement/construction",
+      "zeroBased": true,
+      "perspectives": {
+        "france": [
+          "autorises",
+          "commences"
+        ]
+      }
+    },
+    {
+      "id": "taux-effort",
+      "title": "Ce que le logement coûte aux ménages",
+      "subtitle": "Part du revenu disponible que le logement absorbe, aides déduites",
+      "file": "logement/taux-effort",
+      "perspectives": {
+        "europe": [
+          "FRA",
+          "DEU",
+          "ITA",
+          "ESP",
+          "EU27"
+        ],
+        "niveau-de-vie": [
+          "FRA",
+          "FRA-pauvres",
+          "FRA-autres"
+        ]
+      },
+      "perspectiveLabels": {
+        "europe": "France et voisins",
+        "niveau-de-vie": "Selon le niveau de vie"
+      },
+      "note": "Loyer ou remboursement d'emprunt, charges, énergie, eau et entretien, moins les aides au logement, rapportés au revenu disponible. L'écart entre les ménages pauvres et les autres est ce que la statistique appelle le taux d'effort : c'est là que se joue le débat sur le coût du logement.",
+      "variants": [
+        {
+          "id": "surcharge",
+          "label": "Ménages en surcharge",
+          "subtitle": "Part des ménages dont le logement dépasse 40 % du revenu, par statut d'occupation",
+          "file": "logement/surcharge-statut",
+          "warning": "Autre indicateur : ce n'est plus une part de revenu mais une part de ménages, ceux dont le logement dépasse 40 % du revenu disponible. Les deux ne se superposent pas.",
+          "note": "Le statut d'occupation sépare nettement : un locataire au prix du marché est plusieurs fois plus exposé qu'un propriétaire sans emprunt."
+        }
+      ]
+    }
+  ],
+  "hero": {
+    "chart": "prix-anciens",
+    "perspective": "france"
+  }
+}

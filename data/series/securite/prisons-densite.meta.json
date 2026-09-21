@@ -1,0 +1,24 @@
+{
+  "source": {
+    "publisher": "Eurostat",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/crim_pris_cap/default/table",
+    "downloadUrls": [
+      "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/crim_pris_cap?format=JSON&lang=EN&geo=FR&geo=DE&geo=IT&geo=ES&geo=PL&indic_cr=PRIS_ACT_CAP&indic_cr=PRIS_OFF_CAP&unit=P_HTHAB&unit=NR&sinceTimePeriod=2008"
+    ],
+    "dataset": "crim_pris_cap",
+    "license": "eurostat"
+  },
+  "unit": "détenus pour 100 places",
+  "frequency": "annual",
+  "seriesLabels": {
+    "FRA": "France",
+    "DEU": "Allemagne",
+    "ITA": "Italie",
+    "ESP": "Espagne",
+    "POL": "Pologne"
+  },
+  "script": "scripts/fetch/eurostat.mjs",
+  "notes": "Densité carcérale : nombre de personnes détenues rapporté à la capacité officielle des établissements. Au-dessus de 100, il y a plus de détenus que de places. Calculée à partir des deux effectifs bruts publiés par Eurostat, sans arrondi intermédiaire.",
+  "lastObservation": "2024",
+  "fetchedAt": "2026-09-20"
+}

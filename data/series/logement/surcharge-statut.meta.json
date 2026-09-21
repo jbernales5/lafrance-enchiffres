@@ -1,0 +1,24 @@
+{
+  "source": {
+    "publisher": "Eurostat",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/ilc_lvho07c/default/table",
+    "downloadUrls": [
+      "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_lvho07c?format=JSON&lang=EN&geo=FR&tenure=TOTAL&tenure=OWN_L&tenure=OWN_NL&tenure=RENT_MKT&tenure=RENT_FR&unit=PC&sinceTimePeriod=2003"
+    ],
+    "dataset": "ilc_lvho07c",
+    "license": "eurostat"
+  },
+  "unit": "% des ménages",
+  "frequency": "annual",
+  "seriesLabels": {
+    "ensemble": "Ensemble des ménages",
+    "proprietaire-emprunt": "Propriétaire avec emprunt en cours",
+    "proprietaire-sans-emprunt": "Propriétaire sans emprunt",
+    "locataire-prive": "Locataire au prix du marché",
+    "locataire-social": "Locataire à loyer réduit ou gratuit"
+  },
+  "script": "scripts/fetch/eurostat.mjs",
+  "notes": "Taux de surcharge des coûts du logement : part des personnes vivant dans un ménage dont les dépenses de logement, aides déduites, dépassent 40 % du revenu disponible. C'est une part de ménages, pas une part de revenu : elle ne se lit pas comme le taux d'effort.",
+  "lastObservation": "2025",
+  "fetchedAt": "2026-09-20"
+}

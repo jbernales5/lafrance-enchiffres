@@ -1,0 +1,32 @@
+{
+  "source": {
+    "publisher": "Our World in Data",
+    "upstream": "Stockholm International Peace Research Institute (2026)",
+    "url": "https://ourworldindata.org/grapher/military-spending-sipri",
+    "downloadUrls": [
+      "https://ourworldindata.org/grapher/military-spending-sipri.csv?v=1&csvType=filtered&useColumnShortNames=true&tab=line&time=earliest..latest&country=FRA~DEU~GBR~ITA~POL~USA~RUS~CHN"
+    ],
+    "dataset": "military-spending-sipri",
+    "citation": "Stockholm International Peace Research Institute (2026) – with minor processing by Our World in Data. “Military expenditure” [dataset]. Stockholm International Peace Research Institute, “SIPRI Military Expenditure Database” [original data].",
+    "lastUpdated": "2026-04-27",
+    "title": "Military spending",
+    "license": "owid",
+    "upstreamLicense": "sipri"
+  },
+  "unit": "milliards de $ constants",
+  "frequency": "annual",
+  "lastObservation": "2025",
+  "seriesLabels": {
+    "FRA": "France",
+    "DEU": "Allemagne",
+    "GBR": "Royaume-Uni",
+    "ITA": "Italie",
+    "POL": "Pologne",
+    "USA": "États-Unis",
+    "RUS": "Russie",
+    "CHN": "Chine"
+  },
+  "script": "scripts/fetch/owid.mjs",
+  "notes": "Dépenses militaires totales en dollars constants (corrigés de l'inflation, sans correction du coût de la vie), d'après le SIPRI.",
+  "fetchedAt": "2026-09-20"
+}

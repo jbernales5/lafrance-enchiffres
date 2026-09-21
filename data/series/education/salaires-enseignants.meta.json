@@ -1,0 +1,31 @@
+{
+  "source": {
+    "publisher": "OCDE",
+    "url": "https://data-explorer.oecd.org/vis?tm=%22teacher%20salary%22&pg=0&snb=1&vw=ov&df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_EAG_SAL_TREND%40DF_ALL&df[ag]=OECD.EDU.IMEP&df[vs]=2.1",
+    "downloadUrls": [
+      "https://sdmx.oecd.org/public/rest/data/OECD.EDU.IMEP,DSD_EAG_SAL_TREND@DF_TCH_STA,2.1/all?format=jsondata&dimensionAtObservation=AllDimensions&startPeriod=2000"
+    ],
+    "dataset": "DSD_EAG_SAL_TREND@DF_TCH_STA — trends in teachers' statutory salaries since 2000",
+    "license": "oecd"
+  },
+  "unit": "indice en prix constants, base 100 en 2015",
+  "frequency": "annual",
+  "lastObservation": "2025",
+  "seriesLabels": {
+    "USA-college": "États-Unis — collège",
+    "USA-primaire": "États-Unis — primaire",
+    "FRA-primaire": "France — primaire",
+    "DEU-primaire": "Allemagne — primaire",
+    "ITA-primaire": "Italie — primaire",
+    "ESP-primaire": "Espagne — primaire",
+    "OCDE-primaire": "Moyenne OCDE — primaire",
+    "FRA-college": "France — collège",
+    "DEU-college": "Allemagne — collège",
+    "ITA-college": "Italie — collège",
+    "ESP-college": "Espagne — collège",
+    "OCDE-college": "Moyenne OCDE — collège"
+  },
+  "script": "scripts/fetch/oecd.mjs",
+  "notes": "Salaire statutaire d'un enseignant à temps plein du secteur public après quinze ans d'expérience, avec la qualification la plus courante à ce stade. L'indice est en prix constants, base 100 en 2015 : il mesure le pouvoir d'achat du salaire, pas son montant. Les données de la dernière année sont provisoires.",
+  "fetchedAt": "2026-09-20"
+}

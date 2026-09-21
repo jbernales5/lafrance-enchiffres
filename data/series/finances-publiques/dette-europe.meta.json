@@ -1,0 +1,24 @@
+{
+  "source": {
+    "publisher": "Eurostat",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/gov_10dd_edpt1/default/table",
+    "downloadUrls": [
+      "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10dd_edpt1?format=JSON&lang=EN&geo=FR&geo=DE&geo=IT&geo=ES&geo=EU27_2020&geo=UK&na_item=GD&sector=S13&unit=PC_GDP&sinceTimePeriod=1995"
+    ],
+    "dataset": "gov_10dd_edpt1",
+    "license": "eurostat"
+  },
+  "unit": "% du PIB",
+  "frequency": "annual",
+  "seriesLabels": {
+    "FRA": "France",
+    "DEU": "Allemagne",
+    "ITA": "Italie",
+    "ESP": "Espagne",
+    "EU27": "Union européenne (27)"
+  },
+  "script": "scripts/fetch/eurostat.mjs",
+  "notes": "Dette brute consolidée des administrations publiques au sens du traité de Maastricht (procédure de déficit excessif, SEC 2010), en pourcentage du PIB.",
+  "lastObservation": "2025",
+  "fetchedAt": "2026-09-20"
+}

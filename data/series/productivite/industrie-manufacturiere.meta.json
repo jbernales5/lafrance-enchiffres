@@ -1,0 +1,24 @@
+{
+  "source": {
+    "publisher": "Eurostat",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/nama_10_a10/default/table",
+    "downloadUrls": [
+      "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_a10?format=JSON&lang=EN&geo=FR&geo=DE&geo=IT&geo=ES&geo=EU27_2020&nace_r2=C&na_item=B1G&unit=PC_TOT&sinceTimePeriod=1995"
+    ],
+    "dataset": "nama_10_a10",
+    "license": "eurostat"
+  },
+  "unit": "% de la valeur ajoutée",
+  "frequency": "annual",
+  "seriesLabels": {
+    "FRA": "France",
+    "DEU": "Allemagne",
+    "ITA": "Italie",
+    "ESP": "Espagne",
+    "EU27": "Union européenne (27)"
+  },
+  "script": "scripts/fetch/eurostat.mjs",
+  "notes": "Part de l'industrie manufacturière (section C de la NACE rév. 2) dans la valeur ajoutée brute totale de l'économie, aux prix courants (SEC 2010).",
+  "lastObservation": "2025",
+  "fetchedAt": "2026-09-20"
+}

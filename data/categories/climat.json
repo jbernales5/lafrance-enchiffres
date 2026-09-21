@@ -1,0 +1,172 @@
+{
+  "slug": "climat",
+  "order": 3,
+  "title": "Climat et énergie",
+  "short": "Climat et énergie",
+  "lead": "Ce que la France émet sur son territoire au total et par habitant.",
+  "keyFigure": {
+    "chart": "co2-par-habitant",
+    "label": "émissions territoriales de CO₂",
+    "unit": "t CO₂ / hab."
+  },
+  "cautions": [
+    "CO₂ seul (Global Carbon Budget) et gaz à effet de serre totaux (CO₂, méthane, N₂O, inventaire national publié par Eurostat) ne se comparent pas ; l'axe le précise à chaque fois.",
+    "Les données d'empreinte ont un à deux ans de retard sur les données territoriales : on affiche la dernière année commune.",
+    "La température moyenne annuelle est une donnée d'adaptation, pas d'émissions : elle ne dit rien de la responsabilité française."
+  ],
+  "charts": [
+    {
+      "id": "co2-par-habitant",
+      "title": "Émissions de CO₂ par habitant",
+      "subtitle": "Émissions territoriales, tonnes par personne et par an",
+      "file": "climat/co2-par-habitant",
+      "perspectives": {
+        "france": [
+          "FRA"
+        ],
+        "europe": [
+          "FRA",
+          "DEU",
+          "ITA",
+          "ESP",
+          "GBR"
+        ],
+        "monde": [
+          "FRA",
+          "USA",
+          "CHN",
+          "IND",
+          "WLD"
+        ]
+      },
+      "zeroBased": true
+    },
+    {
+      "id": "territorial-vs-empreinte",
+      "title": "Territorial ou empreinte : deux façons de compter",
+      "subtitle": "CO₂ par habitant émis sur le territoire, et CO₂ lié à la consommation (importations comprises), France",
+      "file": "climat/co2-territorial-vs-empreinte",
+      "zeroBased": true,
+      "note": "Le territorial compte le CO₂ émis sur le sol français. L'empreinte compte celui émis pour ce que les Français consomment : elle ajoute les émissions faites à l'étranger pour fabriquer les produits importés et retire celles des produits exportés. L'écart entre les deux courbes, ce sont les émissions importées.",
+      "perspectives": {
+        "france": [
+          "territorial",
+          "empreinte"
+        ]
+      }
+    },
+    {
+      "id": "co2-total",
+      "title": "Émissions totales de CO₂",
+      "subtitle": "Millions de tonnes par an, émissions territoriales",
+      "file": "climat/co2-total",
+      "perspectives": {
+        "france": [
+          "FRA"
+        ],
+        "europe": [
+          "FRA",
+          "DEU",
+          "ITA",
+          "ESP",
+          "GBR"
+        ],
+        "monde": [
+          "FRA",
+          "USA",
+          "CHN",
+          "IND"
+        ]
+      },
+      "zeroBased": true
+    },
+    {
+      "id": "electricite-intensite",
+      "title": "CO₂ émis par kilowattheure d'électricité",
+      "subtitle": "Grammes de CO₂ par kilowattheure produit, toutes sources de production confondues",
+      "file": "climat/intensite-carbone-electricite",
+      "perspectives": {
+        "france": [
+          "FRA"
+        ],
+        "europe": [
+          "FRA",
+          "DEU",
+          "ITA",
+          "ESP",
+          "GBR",
+          "POL"
+        ],
+        "monde": [
+          "FRA",
+          "USA",
+          "CHN",
+          "IND",
+          "JPN"
+        ]
+      },
+      "zeroBased": true
+    },
+    {
+      "id": "secteurs",
+      "title": "Émissions de gaz à effet de serre par secteur",
+      "subtitle": "Millions de tonnes de CO₂ équivalent émises sur le territoire, par secteur",
+      "file": "climat/emissions-secteurs",
+      "type": "area",
+      "perspectives": {
+        "secteurs": [
+          "energie",
+          "industrie-combustion",
+          "procedes-industriels",
+          "transports",
+          "batiments",
+          "agriculture",
+          "dechets"
+        ],
+        "avec-puits": [
+          "energie",
+          "industrie-combustion",
+          "procedes-industriels",
+          "transports",
+          "batiments",
+          "agriculture",
+          "dechets",
+          "utcatf"
+        ]
+      },
+      "perspectiveLabels": {
+        "secteurs": "Secteurs émetteurs",
+        "avec-puits": "Avec le puits de carbone"
+      },
+      "note": "Inventaire national soumis à la CCNUCC, publié par Eurostat sous la nomenclature CRF. Ce sont les émissions produites en France : ce qui est émis ailleurs pour fabriquer ce que nous importons n'y figure pas. Le puits de carbone, affiché sous l'axe, se compte à part et ne s'ajoute pas au total."
+    },
+    {
+      "id": "empreinte-revenus",
+      "title": "Empreinte carbone selon le niveau de revenu",
+      "subtitle": "Tonnes de CO₂e par habitant et par groupe de revenu, empreinte consommation comprise",
+      "file": "climat/empreinte-par-revenu",
+      "note": "Empreinte individuelle : émissions liées à la consommation et aux investissements détenus, importations comprises. Elle ne se compare donc pas à l'inventaire national, qui compte les émissions produites sur le territoire. La série WID s'arrête en 2019.",
+      "perspectives": {
+        "groupes": [
+          "bottom50",
+          "middle40",
+          "top10",
+          "top1"
+        ]
+      },
+      "perspectiveLabels": {
+        "groupes": "Par groupe"
+      }
+    },
+    {
+      "id": "temperature",
+      "title": "Température moyenne annuelle en France",
+      "subtitle": "Moyenne des douze mois, en °C",
+      "file": "climat/temperature-france"
+    }
+  ],
+  "hero": {
+    "chart": "co2-par-habitant",
+    "perspective": "monde"
+  }
+}

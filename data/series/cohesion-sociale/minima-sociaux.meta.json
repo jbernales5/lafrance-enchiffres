@@ -1,0 +1,23 @@
+{
+  "source": {
+    "publisher": "DREES",
+    "url": "https://data.drees.solidarites-sante.gouv.fr/explore/dataset/336_minima-sociaux-rsa-et-prime-d-activite/information/",
+    "downloadUrls": [
+      "https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/336_minima-sociaux-rsa-et-prime-d-activite/attachments/minima_sociaux_donnees_nationales_par_dispositif_xlsx"
+    ],
+    "dataset": "Minima sociaux, RSA et prime d'activité — Tableau 2 (données nationales par dispositif)",
+    "license": "etalab-2.0"
+  },
+  "unit": "milliers d'allocataires",
+  "frequency": "annual",
+  "seriesLabels": {
+    "rsa": "RSA (socle)",
+    "aah": "Allocation aux adultes handicapés (AAH)",
+    "ass": "Allocation de solidarité spécifique (ASS)",
+    "aspa": "Minimum vieillesse (ASV puis ASPA)"
+  },
+  "notes": "Nombre d'allocataires au 31 décembre, France entière (sources CNAF, MSA, France Travail, CNAV, FSV, caisses des DOM, compilées par la DREES). Il s'agit d'allocataires, pas de personnes couvertes : conjoints et enfants à charge ne sont pas comptés. Plusieurs ruptures : le RSA socle remplace le RMI et l'API en 2009 (2011 dans les DOM), la CNAF a changé de système statistique en 2016, et le minimum vieillesse est compté en date d'entrée en jouissance depuis 2021 ; quand deux valeurs coexistent pour une même année, la plus récente méthode est retenue.",
+  "lastObservation": "2024",
+  "script": "scripts/fetch/france.mjs",
+  "fetchedAt": "2026-09-20"
+}

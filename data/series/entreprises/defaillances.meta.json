@@ -1,0 +1,22 @@
+{
+  "source": {
+    "publisher": "Insee",
+    "url": "https://www.insee.fr/fr/statistiques/serie/001656164",
+    "downloadUrls": [
+      "https://api.insee.fr/series/BDM/V1/data/SERIES_BDM/001656164"
+    ],
+    "idbanks": [
+      "001656164"
+    ],
+    "license": "etalab-2.0"
+  },
+  "unit": "milliers",
+  "frequency": "annual",
+  "seriesLabels": {
+    "ensemble": "Défaillances d'entreprises"
+  },
+  "notes": "Ouvertures de procédures de redressement ou de liquidation judiciaire (Bodacc, via la Banque de France), datées du jugement, France entière : totaux annuels calculés en sommant les quatre trimestres bruts.",
+  "lastObservation": "2025",
+  "script": "scripts/fetch/insee.mjs",
+  "fetchedAt": "2026-09-20"
+}

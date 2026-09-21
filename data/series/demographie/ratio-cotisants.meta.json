@@ -1,0 +1,24 @@
+{
+  "source": {
+    "publisher": "Conseil d'orientation des retraites (COR)",
+    "edition": "Rapport annuel de juin 2026",
+    "url": "https://www.cor-retraites.fr/rapports-du-cor/rapport-annuel-cor-juin-2026-evolutions-perspectives-retraites-france",
+    "downloadUrls": [
+      "https://www.cor-retraites.fr/rapports-du-cor/rapport-annuel-cor-juin-2026-evolutions-perspectives-retraites-france"
+    ],
+    "howToObtain": "Classeur « Données_RA2026_P2.xlsx » joint au rapport annuel, onglets « Fig 2.2 » et « Fig 2.3 », lignes « Obs » et « Sc. Ref ». Copie versionnée : data/sources-manuelles/cor-rapport-2026-donnees-partie-2.xlsx.",
+    "dataset": "Évolutions et perspectives des retraites en France — partie 2, fichiers sources des figures — figure 2.3b",
+    "citation": "Conseil d'orientation des retraites, « Évolutions et perspectives des retraites en France », rapport annuel de juin 2026. Sources du COR : projections COR juin 2026, comptes nationaux de l'Insee base 2020, rapports à la CCSS 2002-2025.",
+    "license": "a-confirmer"
+  },
+  "unit": "cotisants par retraité",
+  "frequency": "annual",
+  "lastObservation": "2024",
+  "seriesLabels": {
+    "FRA": "France — observé",
+    "FRA-projection": "France — projection COR (scénario de référence)"
+  },
+  "script": "scripts/manual/cor.mjs",
+  "notes": "Rapport entre le nombre de cotisants et le nombre de retraités de droit direct, tous régimes légalement obligatoires. C'est l'un des trois déterminants de la masse des pensions rapportée au PIB, avec la pension relative et le taux de prélèvement. La partie en pointillé est la projection du scénario de référence du COR.",
+  "fetchedAt": "2026-09-20"
+}

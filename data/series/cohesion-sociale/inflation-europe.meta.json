@@ -1,0 +1,24 @@
+{
+  "source": {
+    "publisher": "Eurostat",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/prc_hicp_aind/default/table",
+    "downloadUrls": [
+      "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/prc_hicp_aind?format=JSON&lang=EN&geo=FR&geo=DE&geo=IT&geo=ES&geo=EU27_2020&unit=RCH_A_AVG&coicop=CP00&sinceTimePeriod=1997"
+    ],
+    "dataset": "prc_hicp_aind",
+    "license": "eurostat"
+  },
+  "unit": "% de variation annuelle",
+  "frequency": "annual",
+  "seriesLabels": {
+    "FRA": "France",
+    "DEU": "Allemagne",
+    "ITA": "Italie",
+    "ESP": "Espagne",
+    "EU27": "Union européenne (27)"
+  },
+  "script": "scripts/fetch/eurostat.mjs",
+  "notes": "Taux de variation annuel moyen de l'indice des prix à la consommation harmonisé (IPCH), ensemble des postes (CP00). L'IPCH est calculé selon une méthode commune à tous les pays de l'Union, ce qui le rend comparable d'un pays à l'autre ; il diffère légèrement de l'indice des prix à la consommation publié par l'Insee, dont le champ et les pondérations ne sont pas identiques.",
+  "lastObservation": "2025",
+  "fetchedAt": "2026-09-20"
+}

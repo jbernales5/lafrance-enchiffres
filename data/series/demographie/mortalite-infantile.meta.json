@@ -1,0 +1,24 @@
+{
+  "source": {
+    "publisher": "Eurostat",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/demo_minfind/default/table",
+    "downloadUrls": [
+      "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_minfind?format=JSON&lang=EN&geo=FR&geo=DE&geo=IT&geo=ES&geo=EU27_2020&indic_de=INFMORRT&sinceTimePeriod=1990"
+    ],
+    "dataset": "demo_minfind",
+    "license": "eurostat"
+  },
+  "unit": "décès avant 1 an pour 1 000 naissances vivantes",
+  "frequency": "annual",
+  "seriesLabels": {
+    "FRA": "France",
+    "DEU": "Allemagne",
+    "ITA": "Italie",
+    "ESP": "Espagne",
+    "EU27": "Union européenne (27)"
+  },
+  "script": "scripts/fetch/eurostat.mjs",
+  "notes": "Taux de mortalité infantile : nombre d'enfants décédés avant leur premier anniversaire au cours de l'année, rapporté à 1 000 naissances vivantes de la même année.",
+  "lastObservation": "2024",
+  "fetchedAt": "2026-09-20"
+}

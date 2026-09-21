@@ -1,0 +1,24 @@
+{
+  "source": {
+    "publisher": "Insee",
+    "url": "https://www.insee.fr/fr/statistiques/serie/000879877",
+    "downloadUrls": [
+      "https://api.insee.fr/series/BDM/V1/data/SERIES_BDM/000879877+000879878"
+    ],
+    "idbanks": [
+      "000879877",
+      "000879878"
+    ],
+    "license": "etalab-2.0"
+  },
+  "unit": "euros par mois",
+  "frequency": "monthly",
+  "seriesLabels": {
+    "brut": "SMIC mensuel brut (35 h)",
+    "net": "SMIC mensuel net (35 h)"
+  },
+  "notes": "Montant mensuel du Smic pour 35 heures hebdomadaires (151,67 h par mois), France entière ; le net est calculé après CSG et CRDS ; la série mensuelle 35 h de la BDM débute en juillet 2005.",
+  "lastObservation": "2026-09",
+  "script": "scripts/fetch/insee.mjs",
+  "fetchedAt": "2026-09-20"
+}

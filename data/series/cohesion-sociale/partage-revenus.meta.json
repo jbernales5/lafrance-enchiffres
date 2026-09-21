@@ -1,0 +1,29 @@
+{
+  "source": {
+    "publisher": "World Inequality Database (WID.world)",
+    "url": "https://wid.world/country/france/",
+    "downloadUrls": [
+      "https://wid.world/data/"
+    ],
+    "howToObtain": "Export pays « France » (bouton « Download data »). Le fichier brut fait 68 Mo et n'est pas redistribué : seul l'extrait des variables utilisées est versionné, dans data/sources-manuelles/wid-france-extrait.csv.",
+    "dataset": "sptincj992 et sdiincj992, France, percentiles p0p50, p50p90, p90p100, p99p100",
+    "citation": "World Inequality Database (WID.world), export France. Séries construites par Thomas Piketty, Emmanuel Saez, Gabriel Zucman et l'équipe du World Inequality Lab à partir des comptes nationaux, des déclarations fiscales et des enquêtes ménages (méthode « distributional national accounts »).",
+    "license": "a-confirmer"
+  },
+  "unit": "% du revenu national",
+  "frequency": "annual",
+  "seriesLabels": {
+    "bottom50-avant": "50 % du bas — avant impôts",
+    "middle40-avant": "40 % du milieu — avant impôts",
+    "top10-avant": "10 % du haut — avant impôts",
+    "top1-avant": "1 % du haut — avant impôts",
+    "bottom50-apres": "50 % du bas — après impôts",
+    "middle40-apres": "40 % du milieu — après impôts",
+    "top10-apres": "10 % du haut — après impôts",
+    "top1-apres": "1 % du haut — après impôts"
+  },
+  "script": "scripts/manual/wid.mjs",
+  "notes": "Revenu national par adulte, réparti à parts égales au sein du couple. « Avant impôts » est le revenu après retraites et assurance chômage mais avant les autres impôts et transferts ; « après impôts » intègre l'ensemble des impôts et des transferts, monétaires et en nature. Le 1 % du haut est inclus dans le 10 % du haut : les quatre groupes ne s'additionnent pas à 100 %.",
+  "lastObservation": "2024",
+  "fetchedAt": "2026-09-20"
+}

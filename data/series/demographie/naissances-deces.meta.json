@@ -1,0 +1,25 @@
+{
+  "source": {
+    "publisher": "Insee",
+    "url": "https://www.insee.fr/fr/statistiques/serie/000067677",
+    "downloadUrls": [
+      "https://api.insee.fr/series/BDM/V1/data/SERIES_BDM/000067677+000067679"
+    ],
+    "idbanks": [
+      "000067677",
+      "000067679"
+    ],
+    "license": "etalab-2.0"
+  },
+  "unit": "milliers",
+  "frequency": "annual",
+  "seriesLabels": {
+    "naissances": "Naissances vivantes",
+    "deces": "Décès",
+    "solde-naturel": "Solde naturel"
+  },
+  "notes": "Bilan démographique (état civil), champ France métropolitaine pour disposer d'une série homogène depuis 1946 ; la dernière année est provisoire et le solde naturel est calculé comme naissances moins décès.",
+  "lastObservation": "2025",
+  "script": "scripts/fetch/insee.mjs",
+  "fetchedAt": "2026-09-20"
+}

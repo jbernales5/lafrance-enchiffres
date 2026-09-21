@@ -1,0 +1,29 @@
+{
+  "source": {
+    "publisher": "Eurostat",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/lfsi_emp_a/default/table",
+    "downloadUrls": [
+      "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfsi_emp_a?format=JSON&lang=EN&geo=FR&geo=DE&geo=IT&geo=ES&geo=EU27_2020&indic_em=EMP_LFS&unit=PC_POP&age=Y20-64&sex=F&sex=M&sinceTimePeriod=2000"
+    ],
+    "dataset": "lfsi_emp_a",
+    "license": "eurostat"
+  },
+  "unit": "% de la population 20-64 ans",
+  "frequency": "annual",
+  "seriesLabels": {
+    "FRA-femmes": "France – femmes",
+    "FRA-hommes": "France – hommes",
+    "DEU-femmes": "Allemagne – femmes",
+    "DEU-hommes": "Allemagne – hommes",
+    "ITA-femmes": "Italie – femmes",
+    "ITA-hommes": "Italie – hommes",
+    "ESP-femmes": "Espagne – femmes",
+    "ESP-hommes": "Espagne – hommes",
+    "EU27-femmes": "Union européenne (27) – femmes",
+    "EU27-hommes": "Union européenne (27) – hommes"
+  },
+  "script": "scripts/fetch/eurostat.mjs",
+  "notes": "Part des femmes et des hommes de 20 à 64 ans en emploi (enquête Forces de travail, concept de population résidente).",
+  "lastObservation": "2025",
+  "fetchedAt": "2026-09-20"
+}

@@ -1,0 +1,24 @@
+{
+  "source": {
+    "publisher": "Fonds monétaire international",
+    "url": "https://www.imf.org/external/datamapper/ie",
+    "downloadUrls": [
+      "https://www.imf.org/external/datamapper/api/v1/ie/FRA/USA/JPN/GBR/CHN"
+    ],
+    "dataset": "ie",
+    "license": "imf-data"
+  },
+  "unit": "% du PIB",
+  "frequency": "annual",
+  "seriesLabels": {
+    "FRA": "France",
+    "USA": "États-Unis",
+    "JPN": "Japon",
+    "GBR": "Royaume-Uni",
+    "CHN": "Chine"
+  },
+  "script": "scripts/fetch/imf.mjs",
+  "notes": "Intérêts payés sur la dette publique rapportés au PIB, base de finances publiques historiques du FMI. La définition diffère du poste D41 du SEC 2010 utilisé par Eurostat ; les niveaux ne sont pas directement comparables à la vue européenne.",
+  "lastObservation": "2024",
+  "fetchedAt": "2026-09-20"
+}

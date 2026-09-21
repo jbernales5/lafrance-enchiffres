@@ -1,0 +1,24 @@
+{
+  "source": {
+    "publisher": "Insee",
+    "url": "https://www.insee.fr/fr/statistiques/serie/010600365",
+    "downloadUrls": [
+      "https://api.insee.fr/series/BDM/V1/data/SERIES_BDM/010600365+001515333"
+    ],
+    "idbanks": [
+      "010600365",
+      "001515333"
+    ],
+    "license": "etalab-2.0"
+  },
+  "unit": "indice, base 100 en janvier 2019",
+  "frequency": "quarterly",
+  "seriesLabels": {
+    "FRA": "Indice des loyers (tous secteurs, France métro.)",
+    "irl": "IRL (rebasé T1 2019 = 100)"
+  },
+  "notes": "Indice des loyers d'habitation tous secteurs (libre et social), France métropolitaine, base 100 en janvier 2019 ; l'indice de référence des loyers (IRL, base 100 au T4 1998 à la source) est rebasé ici sur le T1 2019 pour être comparable.",
+  "lastObservation": "2026-Q2",
+  "script": "scripts/fetch/insee.mjs",
+  "fetchedAt": "2026-09-20"
+}

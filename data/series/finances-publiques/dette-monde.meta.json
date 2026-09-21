@@ -1,0 +1,24 @@
+{
+  "source": {
+    "publisher": "Fonds monétaire international",
+    "url": "https://www.imf.org/external/datamapper/GGXWDG_NGDP",
+    "downloadUrls": [
+      "https://www.imf.org/external/datamapper/api/v1/GGXWDG_NGDP/FRA/USA/JPN/GBR/CHN"
+    ],
+    "dataset": "GGXWDG_NGDP",
+    "license": "imf-data"
+  },
+  "unit": "% du PIB",
+  "frequency": "annual",
+  "seriesLabels": {
+    "FRA": "France",
+    "USA": "États-Unis",
+    "JPN": "Japon",
+    "GBR": "Royaume-Uni",
+    "CHN": "Chine"
+  },
+  "script": "scripts/fetch/imf.mjs",
+  "notes": "Dette brute des administrations publiques rapportée au PIB, base World Economic Outlook du FMI. Cette définition n'est pas celle du traité de Maastricht utilisée par Eurostat : les deux séries sont proches pour la France mais ne se superposent pas. Les projections du FMI au-delà de 2024 ne sont pas affichées.",
+  "lastObservation": "2024",
+  "fetchedAt": "2026-09-20"
+}

@@ -1,0 +1,26 @@
+{
+  "source": {
+    "publisher": "Eurostat",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/hlth_cd_asdr2/default/table",
+    "downloadUrls": [
+      "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/hlth_cd_asdr2?format=JSON&lang=EN&geo=FR&geo=DE&geo=IT&geo=ES&geo=EU27_2020&icd10=X60-X84_Y870&sex=T&sex=M&sex=F&age=TOTAL&unit=RT&sinceTimePeriod=2011"
+    ],
+    "dataset": "hlth_cd_asdr2",
+    "license": "eurostat"
+  },
+  "unit": "décès pour 100 000 habitants, taux standardisé",
+  "frequency": "annual",
+  "seriesLabels": {
+    "FRA": "France",
+    "DEU": "Allemagne",
+    "ITA": "Italie",
+    "ESP": "Espagne",
+    "EU27": "Union européenne (27)",
+    "FRA-hommes": "France — hommes",
+    "FRA-femmes": "France — femmes"
+  },
+  "script": "scripts/fetch/eurostat.mjs",
+  "notes": "Décès par lésions auto-infligées intentionnelles (libellé de la classification internationale des maladies, CIM-10, codes X60-X84 et Y87.0), pour 100 000 habitants. Le taux est standardisé sur la structure par âge de la population européenne de référence : il neutralise les différences de pyramide des âges et permet donc de comparer les pays entre eux et une même population dans le temps.",
+  "lastObservation": "2023",
+  "fetchedAt": "2026-09-20"
+}

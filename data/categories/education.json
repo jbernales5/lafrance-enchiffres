@@ -1,0 +1,229 @@
+{
+  "slug": "education",
+  "order": 6,
+  "title": "Éducation et capital humain",
+  "short": "Éducation",
+  "lead": "Les résultats des élèves, ce que le pays dépense par niveau et ce que deviennent les jeunes à la sortie. Les évaluations internationales n'ont lieu que tous les trois ans : la série est courte et se lit avec la moyenne OCDE.",
+  "keyFigure": {
+    "chart": "neet",
+    "label": "jeunes ni en emploi, ni en études, ni en formation",
+    "unit": "%"
+  },
+  "cautions": [
+    "Les cycles PISA ont lieu tous les trois ans, avec un décalage après la pandémie ; les évaluations nationales de la DEPP ne sont comparables ni entre elles ni avec PISA.",
+    "PISA 2025 a été passé sur ordinateur avec de nouveaux items ; l'OCDE et la DEPP jugent la comparaison avec 2022 valide, mais c'est une note de lecture, pas un titre.",
+    "La dépense par élève se compare par niveau (primaire, collège, lycée, supérieur), jamais en moyenne globale."
+  ],
+  "charts": [
+    {
+      "id": "pisa",
+      "title": "Scores PISA",
+      "subtitle": "Score moyen des élèves de 15 ans à chaque cycle de l'enquête",
+      "file": "education/pisa",
+      "perspectives": {
+        "maths": [
+          "FRA-maths",
+          "DEU-maths",
+          "ITA-maths",
+          "ESP-maths",
+          "GBR-maths",
+          "USA-maths",
+          "JPN-maths",
+          "OCDE-maths"
+        ],
+        "ecrit": [
+          "FRA-ecrit",
+          "DEU-ecrit",
+          "ITA-ecrit",
+          "ESP-ecrit",
+          "GBR-ecrit",
+          "USA-ecrit",
+          "JPN-ecrit",
+          "OCDE-ecrit"
+        ],
+        "sciences": [
+          "FRA-sciences",
+          "DEU-sciences",
+          "ITA-sciences",
+          "ESP-sciences",
+          "GBR-sciences",
+          "USA-sciences",
+          "JPN-sciences",
+          "OCDE-sciences"
+        ]
+      },
+      "perspectiveLabels": {
+        "maths": "Mathématiques",
+        "ecrit": "Compréhension de l'écrit",
+        "sciences": "Sciences"
+      },
+      "zeroBased": false,
+      "note": "Vingt points d'écart valent environ une demi-année de scolarité. Le cycle 2022 s'est tenu après la pandémie et le décrochage y est général : ce qui distingue les pays, c'est l'ampleur, puis ce qui s'est passé ensuite. Les élèves testés ont 15 ans, donc chaque cycle mesure une scolarité commencée dix ans plus tôt. L'Espagne manque en 2018 : l'OCDE n'a pas publié ses résultats cette année-là.",
+      "connectNulls": true
+    },
+    {
+      "id": "pisa-origine-sociale",
+      "title": "L'écart selon l'origine sociale",
+      "subtitle": "Score en sciences du quart le plus favorisé et du quart le plus défavorisé",
+      "file": "education/pisa-origine-sociale",
+      "perspectives": {
+        "niveaux": [
+          "defavorises",
+          "favorises"
+        ],
+        "ecart": [
+          "ecart"
+        ]
+      },
+      "perspectiveLabels": {
+        "niveaux": "Les deux quarts",
+        "ecart": "L'écart seul"
+      },
+      "zeroBased": false,
+      "note": "Le classement est fait sur l'indice OCDE de statut économique, social et culturel des familles. En France cet écart est l'un des plus élevés de l'OCDE : c'est ce chiffre, plus que la moyenne, qui fonde le reproche fait au système scolaire français."
+    },
+    {
+      "id": "pisa-niveaux",
+      "title": "Élèves en difficulté et élèves très performants",
+      "subtitle": "Part des élèves sous le niveau 2 et au niveau 5 ou 6 de l'échelle PISA",
+      "file": "education/pisa-niveaux",
+      "perspectives": {
+        "maths": [
+          "FRA-maths-difficulte",
+          "OCDE-maths-difficulte",
+          "FRA-maths-performants",
+          "OCDE-maths-performants"
+        ],
+        "ecrit": [
+          "FRA-ecrit-difficulte",
+          "OCDE-ecrit-difficulte",
+          "FRA-ecrit-performants",
+          "OCDE-ecrit-performants"
+        ]
+      },
+      "perspectiveLabels": {
+        "maths": "Mathématiques",
+        "ecrit": "Compréhension de l'écrit"
+      },
+      "note": "Le niveau 2 est le seuil au-dessous duquel l'OCDE considère qu'un élève ne peut pas se servir de ce qu'il a appris dans la vie courante. Les deux extrémités de la distribution se lisent ensemble : une moyenne stable peut recouvrir un décrochage d'un côté et une progression de l'autre."
+    },
+    {
+      "id": "depense-education",
+      "title": "Dépense d'éducation par élève et par niveau",
+      "subtitle": "Dépense annuelle par élève, en dollars à parité de pouvoir d'achat, prix constants",
+      "file": "education/depense-education",
+      "perspectives": {
+        "niveaux": [
+          "FRA-primaire",
+          "FRA-college",
+          "FRA-lycee",
+          "FRA-superieur"
+        ],
+        "primaire": [
+          "FRA-primaire",
+          "DEU-primaire",
+          "ITA-primaire",
+          "ESP-primaire",
+          "GBR-primaire",
+          "USA-primaire"
+        ],
+        "lycee": [
+          "FRA-lycee",
+          "DEU-lycee",
+          "ITA-lycee",
+          "ESP-lycee",
+          "GBR-lycee",
+          "USA-lycee"
+        ]
+      },
+      "perspectiveLabels": {
+        "niveaux": "France, par niveau",
+        "primaire": "Primaire, comparé",
+        "lycee": "Lycée, comparé"
+      },
+      "note": "Tous ces pays dépensent plus par lycéen que par écolier, mais l'écart français est le plus large du panel : une fois et demie, contre un peu plus d'un tiers en Allemagne et moins d'un dixième aux États-Unis. C'est le primaire qui décroche, au niveau le plus bas des six pays. Le supérieur inclut la recherche, ce qui gonfle son niveau.",
+      "baseLabel": "Par élève, France",
+      "variants": [
+        {
+          "id": "part-pib",
+          "label": "Effort public, % du PIB",
+          "subtitle": "Dépense publique d'enseignement rapportée au PIB, de la maternelle au supérieur",
+          "file": "education/depense-education-pib",
+          "warning": "Autre mesure : l'argent public rapporté au PIB, et non la dépense par élève. Elle intègre le supérieur et la recherche universitaire, et ne compte ni les familles ni les entreprises.",
+          "note": "Deux lectures d'un même effort : la part de la richesse nationale consacrée à l'enseignement, et la dépense par élève. Elles peuvent diverger, parce que la démographie scolaire évolue indépendamment du budget."
+        }
+      ]
+    },
+    {
+      "id": "salaires-enseignants",
+      "title": "Pouvoir d'achat du salaire des enseignants",
+      "subtitle": "Salaire statutaire après quinze ans de carrière, en prix constants, base 100 en 2015",
+      "file": "education/salaires-enseignants",
+      "perspectives": {
+        "college": [
+          "FRA-college",
+          "DEU-college",
+          "ITA-college",
+          "ESP-college",
+          "USA-college",
+          "OCDE-college"
+        ],
+        "primaire": [
+          "FRA-primaire",
+          "DEU-primaire",
+          "ITA-primaire",
+          "ESP-primaire",
+          "USA-primaire",
+          "OCDE-primaire"
+        ]
+      },
+      "perspectiveLabels": {
+        "college": "Collège",
+        "primaire": "École primaire"
+      },
+      "note": "L'indice suit le pouvoir d'achat du salaire, pas son montant : 100 correspond à 2015. La courbe part de l'année de base : elle dit si le pouvoir d'achat du salaire statutaire a suivi les prix, pays par pays."
+    },
+    {
+      "id": "neet",
+      "title": "Jeunes ni en emploi, ni en études, ni en formation",
+      "subtitle": "Part des 18-24 ans, en %",
+      "file": "education/neet",
+      "perspectives": {
+        "france": [
+          "FRA"
+        ],
+        "europe": [
+          "FRA",
+          "DEU",
+          "ITA",
+          "ESP",
+          "EU27"
+        ]
+      },
+      "zeroBased": true
+    },
+    {
+      "id": "sorties-precoces",
+      "title": "Sorties précoces du système scolaire",
+      "subtitle": "Part des 18-24 ans sans diplôme du second cycle et hors formation, en %",
+      "file": "education/sorties-precoces",
+      "perspectives": {
+        "france": [
+          "FRA"
+        ],
+        "europe": [
+          "FRA",
+          "DEU",
+          "ITA",
+          "ESP",
+          "EU27"
+        ]
+      },
+      "zeroBased": true
+    }
+  ],
+  "hero": {
+    "chart": "neet",
+    "perspective": "europe"
+  }
+}

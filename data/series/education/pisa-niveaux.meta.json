@@ -1,0 +1,30 @@
+{
+  "source": {
+    "publisher": "DEPP (ministère de l'Éducation nationale)",
+    "edition": "Note d'Information n° 26.40",
+    "url": "https://www.education.gouv.fr/depp/pisa-2025-les-acquis-des-eleves-de-15-ans-en-comprehension-de-l-ecrit-et-en-culture-mathematique-en-505645",
+    "downloadUrls": [
+      "https://www.education.gouv.fr/depp/pisa-2025-les-acquis-des-eleves-de-15-ans-en-comprehension-de-l-ecrit-et-en-culture-mathematique-en-505645"
+    ],
+    "howToObtain": "Fichier de données joint à la Note d'Information, feuilles « Figure 8 web » et « Figure 13 web ». Copie versionnée : data/sources-manuelles/depp-ni-2026-40-pisa.xlsx.",
+    "dataset": "Fichier de données joint — figures 8 et 13 : proportion d'élèves en difficulté et les plus performants",
+    "citation": "DEPP, « PISA 2025 : les acquis des élèves de 15 ans en compréhension de l'écrit et en culture mathématique », Note d'Information n° 26.40. Données OCDE-PISA.",
+    "license": "etalab-2.0"
+  },
+  "unit": "% des élèves",
+  "frequency": "annual",
+  "lastObservation": "2025",
+  "seriesLabels": {
+    "FRA-ecrit-difficulte": "France — en difficulté, écrit",
+    "OCDE-ecrit-difficulte": "Moyenne OCDE — en difficulté, écrit",
+    "FRA-ecrit-performants": "France — très performants, écrit",
+    "OCDE-ecrit-performants": "Moyenne OCDE — très performants, écrit",
+    "FRA-maths-difficulte": "France — en difficulté, mathématiques",
+    "OCDE-maths-difficulte": "Moyenne OCDE — en difficulté, mathématiques",
+    "FRA-maths-performants": "France — très performants, mathématiques",
+    "OCDE-maths-performants": "Moyenne OCDE — très performants, mathématiques"
+  },
+  "script": "scripts/manual/pisa.mjs",
+  "notes": "Élèves « en difficulté » : ceux qui n'atteignent pas le niveau 2 de l'échelle PISA, le seuil que l'OCDE considère nécessaire pour participer pleinement à la vie sociale et économique. Élèves « très performants » : niveau 5 ou 6. La moyenne OCDE est calculée par la DEPP sur les 24 pays présents à tous les cycles depuis 2000, ce qui la rend comparable d'un cycle à l'autre.",
+  "fetchedAt": "2026-09-20"
+}

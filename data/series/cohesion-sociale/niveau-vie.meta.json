@@ -1,0 +1,23 @@
+{
+  "source": {
+    "publisher": "Insee",
+    "url": "https://www.insee.fr/fr/statistiques/9019316",
+    "downloadUrls": [
+      "https://api.insee.fr/melodi/data/DS_ERFS_RETROPOLE?ERFS_MEASURE=MED_SL&maxResult=5000"
+    ],
+    "dataset": "DS_ERFS_RETROPOLE",
+    "codes": [
+      "MED_SL"
+    ],
+    "license": "etalab-2.0"
+  },
+  "unit": "euros constants 2024 par an",
+  "frequency": "annual",
+  "seriesLabels": {
+    "median": "Niveau de vie médian"
+  },
+  "notes": "Niveau de vie médian des personnes (revenu disponible par unité de consommation), ERFS, France métropolitaine, exprimé en euros constants de 2024, séries rétropolées.",
+  "lastObservation": "2024",
+  "script": "scripts/fetch/insee.mjs",
+  "fetchedAt": "2026-09-20"
+}

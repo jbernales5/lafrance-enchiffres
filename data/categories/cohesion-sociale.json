@@ -1,0 +1,274 @@
+{
+  "slug": "cohesion-sociale",
+  "order": 8,
+  "title": "Cohésion sociale, partage de la richesse, égalité femmes-hommes",
+  "short": "Cohésion sociale",
+  "lead": "Qui gagne quoi, qui possède quoi, qui tombe sous le seuil de pauvreté, et où en est l'égalité entre femmes et hommes. Avant et après redistribution, les deux lectures côte à côte.",
+  "keyFigure": {
+    "chart": "pauvrete",
+    "label": "taux de pauvreté monétaire (seuil à 60 %)",
+    "series": "taux-60",
+    "unit": "%"
+  },
+  "cautions": [
+    "Les séries WID (revenu national avant impôt, adultes) et Insee (niveau de vie après redistribution, unités de consommation) ne se comparent pas : deux graphes, deux notes de lecture.",
+    "La série de pauvreté de l'Insee a une rupture de méthode en 2010, avec la rénovation de l'enquête. La décomposition de la DREES, elle, n'a pas d'année 2020 : l'enquête a été fragilisée par la pandémie.",
+    "L'écart de salaire femmes-hommes a trois mesures qui circulent (revenu annuel, équivalent temps plein, à poste comparable) ; celle d'Eurostat est l'écart non ajusté sur le salaire horaire brut."
+  ],
+  "charts": [
+    {
+      "id": "inflation",
+      "title": "Inflation",
+      "subtitle": "Indice des prix à la consommation, variation sur un an, France",
+      "file": "cohesion-sociale/inflation",
+      "perspectives": {
+        "france": [
+          "glissement"
+        ]
+      },
+      "note": "Indice Insee, champ France hors Mayotte, ensemble des ménages, tabac compris.",
+      "variants": [
+        {
+          "id": "europe",
+          "label": "Voisins européens",
+          "subtitle": "Indice des prix harmonisé (IPCH), moyenne annuelle",
+          "file": "cohesion-sociale/inflation-europe",
+          "series": [
+            "FRA",
+            "DEU",
+            "ITA",
+            "ESP",
+            "EU27"
+          ],
+          "warning": "Source différente : Eurostat et indice harmonisé (IPCH), calculé selon une méthode commune à tous les pays pour être comparable. Il diffère un peu de l'indice de l'Insee affiché en vue France, notamment sur le traitement du logement."
+        }
+      ],
+      "perspectiveLabels": {
+        "france": "France (Insee)"
+      }
+    },
+    {
+      "id": "protection-sociale",
+      "title": "Dépenses de protection sociale",
+      "subtitle": "Prestations versées, en % du PIB",
+      "file": "cohesion-sociale/protection-sociale",
+      "perspectives": {
+        "risques": [
+          "FRA-vieillesse",
+          "FRA-sante",
+          "FRA-famille",
+          "FRA-chomage",
+          "FRA-invalidite"
+        ],
+        "europe": [
+          "FRA-total",
+          "DEU-total",
+          "ITA-total",
+          "ESP-total",
+          "EU27-total"
+        ],
+        "vieillesse": [
+          "FRA-vieillesse",
+          "DEU-vieillesse",
+          "ITA-vieillesse",
+          "ESP-vieillesse",
+          "EU27-vieillesse"
+        ]
+      },
+      "perspectiveLabels": {
+        "risques": "France, par risque",
+        "europe": "Total, voisins européens",
+        "vieillesse": "Vieillesse, voisins européens"
+      },
+      "zeroBased": true,
+      "note": "Périmètre plus large que le budget de l'État : la base européenne ESSPROS additionne l'État, la sécurité sociale et les régimes complémentaires."
+    },
+    {
+      "id": "pauvrete",
+      "title": "Taux de pauvreté monétaire",
+      "subtitle": "Part de la population vivant sous 60 % du niveau de vie médian, France métropolitaine",
+      "file": "cohesion-sociale/pauvrete",
+      "zeroBased": true,
+      "perspectives": {
+        "france": [
+          "taux-60"
+        ],
+        "europe": [
+          "taux-60",
+          "taux-50"
+        ]
+      },
+      "perspectiveLabels": {
+        "france": "Seuil à 60 %",
+        "europe": "Seuils à 60 % et 50 %"
+      }
+    },
+    {
+      "id": "niveau-vie",
+      "title": "Niveau de vie médian",
+      "subtitle": "Par an et par unité de consommation, en euros constants, France métropolitaine",
+      "file": "cohesion-sociale/niveau-vie",
+      "zeroBased": true
+    },
+    {
+      "id": "gini",
+      "title": "Inégalités de niveau de vie",
+      "subtitle": "Indice de Gini du revenu disponible équivalent (0 = égalité parfaite, 100 = un seul ménage a tout)",
+      "file": "cohesion-sociale/gini",
+      "perspectives": {
+        "france": [
+          "FRA"
+        ],
+        "europe": [
+          "FRA",
+          "DEU",
+          "ITA",
+          "ESP",
+          "EU27"
+        ]
+      },
+      "zeroBased": true
+    },
+    {
+      "id": "partage-revenus",
+      "title": "Partage du revenu national",
+      "subtitle": "Part du revenu national captée par chaque groupe, avant et après impôts et transferts",
+      "file": "cohesion-sociale/partage-revenus",
+      "perspectives": {
+        "avant-impot": [
+          "bottom50-avant",
+          "middle40-avant",
+          "top10-avant",
+          "top1-avant"
+        ],
+        "apres-impot": [
+          "bottom50-apres",
+          "middle40-apres",
+          "top10-apres",
+          "top1-apres"
+        ]
+      },
+      "perspectiveLabels": {
+        "avant-impot": "Avant impôts",
+        "apres-impot": "Après impôts et transferts"
+      },
+      "note": "Le 1 % du haut est compris dans le 10 % du haut : les courbes ne s'additionnent pas à 100 %. L'écart entre les deux lectures est ce que la redistribution corrige."
+    },
+    {
+      "id": "partage-patrimoine",
+      "title": "Partage du patrimoine",
+      "subtitle": "Part du patrimoine net détenue par chaque groupe, France",
+      "file": "cohesion-sociale/partage-patrimoine",
+      "note": "Patrimoine net : logement, épargne et actifs professionnels, dettes déduites. Il est bien plus concentré que le revenu, et sa concentration bouge lentement. La série porte sur la France seule : l'export de la World Inequality Database se fait pays par pays.",
+      "perspectives": {
+        "groupes": [
+          "bottom50",
+          "middle40",
+          "top10",
+          "top1"
+        ]
+      },
+      "perspectiveLabels": {
+        "groupes": "Par groupe"
+      }
+    },
+    {
+      "id": "pouvoir-achat",
+      "title": "Pouvoir d'achat par unité de consommation",
+      "subtitle": "Revenu disponible brut des ménages par unité de consommation, en volume, indice base 100 en 2015",
+      "file": "cohesion-sociale/pouvoir-achat",
+      "perspectives": {
+        "france": [
+          "FRA"
+        ],
+        "europe": [
+          "FRA",
+          "arbitrable"
+        ]
+      },
+      "perspectiveLabels": {
+        "france": "Revenu disponible",
+        "europe": "Avec le revenu arbitrable"
+      },
+      "note": "Le revenu arbitrable retire les dépenses difficilement renégociables à court terme (logement, assurances, abonnements)."
+    },
+    {
+      "id": "ecart-salarial",
+      "title": "Écart de salaire entre femmes et hommes",
+      "subtitle": "Écart non ajusté sur le salaire horaire brut, en % du salaire des hommes",
+      "file": "cohesion-sociale/ecart-salarial-fh",
+      "perspectives": {
+        "france": [
+          "FRA"
+        ],
+        "europe": [
+          "FRA",
+          "DEU",
+          "ITA",
+          "ESP",
+          "EU27"
+        ]
+      },
+      "zeroBased": true
+    },
+    {
+      "id": "emploi-femmes-hommes",
+      "title": "Taux d'emploi des femmes et des hommes",
+      "subtitle": "Part des 20-64 ans en emploi. La vue Europe compare les femmes.",
+      "file": "cohesion-sociale/taux-emploi-femmes-hommes",
+      "perspectives": {
+        "france": [
+          "FRA-femmes",
+          "FRA-hommes"
+        ],
+        "europe": [
+          "FRA-femmes",
+          "DEU-femmes",
+          "ITA-femmes",
+          "ESP-femmes",
+          "EU27-femmes"
+        ]
+      }
+    },
+    {
+      "id": "smic",
+      "title": "SMIC mensuel",
+      "subtitle": "Brut et net pour 35 heures, euros courants",
+      "file": "cohesion-sociale/smic",
+      "zeroBased": true,
+      "perspectives": {
+        "france": [
+          "brut",
+          "net"
+        ]
+      }
+    },
+    {
+      "id": "minima-sociaux",
+      "title": "Allocataires des minima sociaux",
+      "subtitle": "Revenu de solidarité active, allocation adulte handicapé, allocation de solidarité spécifique, minimum vieillesse",
+      "file": "cohesion-sociale/minima-sociaux",
+      "zeroBased": true,
+      "note": "Nombre d'allocataires, pas de personnes couvertes : un foyer allocataire peut compter un conjoint et des enfants."
+    },
+    {
+      "id": "redistribution",
+      "title": "Ce que la redistribution corrige",
+      "subtitle": "Taux de pauvreté avant et après impôts et prestations, seuil à 60 % du niveau de vie médian",
+      "file": "cohesion-sociale/redistribution",
+      "zeroBased": true,
+      "note": "L'écart entre les deux courbes, c'est l'effet des impôts et des prestations sociales. L'année 2020 est absente et la série connaît une rupture en 2021."
+    },
+    {
+      "id": "allocataires-cnaf",
+      "title": "Allocataires des caisses d'allocations familiales",
+      "subtitle": "Foyers allocataires en décembre, régime général (hors régime agricole)",
+      "file": "cohesion-sociale/allocataires-cnaf",
+      "zeroBased": true
+    }
+  ],
+  "hero": {
+    "chart": "gini",
+    "perspective": "europe"
+  }
+}

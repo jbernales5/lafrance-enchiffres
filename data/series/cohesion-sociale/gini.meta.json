@@ -1,0 +1,24 @@
+{
+  "source": {
+    "publisher": "Eurostat",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/ilc_di12/default/table",
+    "downloadUrls": [
+      "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_di12?format=JSON&lang=EN&geo=FR&geo=DE&geo=IT&geo=ES&geo=EU27_2020&age=TOTAL&statinfo=GINI_HND&sinceTimePeriod=2005"
+    ],
+    "dataset": "ilc_di12",
+    "license": "eurostat"
+  },
+  "unit": "indice de Gini (0-100)",
+  "frequency": "annual",
+  "seriesLabels": {
+    "FRA": "France",
+    "DEU": "Allemagne",
+    "ITA": "Italie",
+    "ESP": "Espagne",
+    "EU27": "Union européenne (27)"
+  },
+  "script": "scripts/fetch/eurostat.mjs",
+  "notes": "Coefficient de Gini du revenu disponible équivalent (EU-SILC) : 0 = égalité parfaite, 100 = un seul individu détient tout le revenu ; la série diffusée par Eurostat dans ilc_di12 commence en 2014.",
+  "lastObservation": "2025",
+  "fetchedAt": "2026-09-20"
+}

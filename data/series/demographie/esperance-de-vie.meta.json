@@ -1,0 +1,33 @@
+{
+  "source": {
+    "publisher": "Our World in Data",
+    "upstream": "Riley (2005); Zijdeman et al. (2015); HMD (2025); UN WPP (2024)",
+    "url": "https://ourworldindata.org/grapher/life-expectancy",
+    "downloadUrls": [
+      "https://ourworldindata.org/grapher/life-expectancy.csv?v=1&csvType=filtered&useColumnShortNames=true&tab=line&time=earliest..latest&country=FRA~DEU~ITA~ESP~GBR~USA~CHN~JPN~IND"
+    ],
+    "dataset": "life-expectancy",
+    "citation": "Riley (2005); Zijdeman et al. (2015); HMD (2025); UN WPP (2024) – with major processing by Our World in Data. “Life expectancy – Riley; Zijdeman et al.; HMD; UN WPP – Long-run data” [dataset]. Human Mortality Database, “Human Mortality Database”; United Nations, “World Population Prospects”; United Nations, “World Population Prospects – Interim Update”; Zijdeman et al., “Life Expectancy at birth v2”; James C. Riley, “Estimates of Regional and Global Life Expectancy, 1800–2001” [original data].",
+    "lastUpdated": "2025-10-22",
+    "title": "Life expectancy",
+    "license": "owid",
+    "upstreamLicense": "a-confirmer"
+  },
+  "unit": "années",
+  "frequency": "annual",
+  "lastObservation": "2023",
+  "seriesLabels": {
+    "FRA": "France",
+    "DEU": "Allemagne",
+    "ITA": "Italie",
+    "ESP": "Espagne",
+    "GBR": "Royaume-Uni",
+    "USA": "États-Unis",
+    "CHN": "Chine",
+    "JPN": "Japon",
+    "IND": "Inde"
+  },
+  "script": "scripts/fetch/owid.mjs",
+  "notes": "Espérance de vie à la naissance : nombre moyen d'années qu'un nouveau-né vivrait si les conditions de mortalité de l'année restaient inchangées.",
+  "fetchedAt": "2026-09-20"
+}

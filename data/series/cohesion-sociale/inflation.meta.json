@@ -1,0 +1,22 @@
+{
+  "source": {
+    "publisher": "Insee",
+    "url": "https://www.insee.fr/fr/statistiques/serie/011814632",
+    "downloadUrls": [
+      "https://api.insee.fr/series/BDM/V1/data/SERIES_BDM/011814632"
+    ],
+    "idbanks": [
+      "011814632"
+    ],
+    "license": "etalab-2.0"
+  },
+  "unit": "% de variation sur un an",
+  "frequency": "monthly",
+  "seriesLabels": {
+    "glissement": "Inflation (glissement annuel de l'IPC)"
+  },
+  "notes": "Indice des prix à la consommation, base 2025, champ France (métropole et DOM hors Mayotte), ensemble des ménages, ensemble des postes de la nomenclature Coicop (« 00 - Ensemble », donc TABAC COMPRIS et hors loyers imputés) : variation de l'indice par rapport au même mois de l'année précédente, en données brutes. L'IPC diffère légèrement de l'indice des prix à la consommation harmonisé (IPCH) utilisé pour les comparaisons européennes et par la BCE, dont le champ et les pondérations ne sont pas identiques.",
+  "lastObservation": "2026-08",
+  "script": "scripts/fetch/insee.mjs",
+  "fetchedAt": "2026-09-20"
+}

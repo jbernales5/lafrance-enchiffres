@@ -1,0 +1,33 @@
+{
+  "source": {
+    "publisher": "Our World in Data",
+    "upstream": "Global Carbon Budget (2025); Population based on various sources (2024)",
+    "url": "https://ourworldindata.org/grapher/co-emissions-per-capita",
+    "downloadUrls": [
+      "https://ourworldindata.org/grapher/co-emissions-per-capita.csv?v=1&csvType=filtered&useColumnShortNames=true&tab=line&time=earliest..latest&country=FRA~DEU~ITA~ESP~GBR~USA~CHN~IND~OWID_WRL"
+    ],
+    "dataset": "co-emissions-per-capita",
+    "citation": "Global Carbon Budget (2025); Population based on various sources (2024) – with major processing by Our World in Data. “CO₂ emissions per capita” [dataset]. Global Carbon Project, “Global Carbon Budget v15”; Various sources, “Population” [original data].",
+    "lastUpdated": "2025-11-13",
+    "title": "CO₂ emissions per capita",
+    "license": "owid",
+    "upstreamLicense": "cc-by-4.0"
+  },
+  "unit": "t CO₂ par habitant",
+  "frequency": "annual",
+  "lastObservation": "2024",
+  "seriesLabels": {
+    "FRA": "France",
+    "DEU": "Allemagne",
+    "ITA": "Italie",
+    "ESP": "Espagne",
+    "GBR": "Royaume-Uni",
+    "USA": "États-Unis",
+    "CHN": "Chine",
+    "IND": "Inde",
+    "WLD": "Monde"
+  },
+  "script": "scripts/fetch/owid.mjs",
+  "notes": "Émissions territoriales de CO₂ issues des énergies fossiles et de l'industrie (hors changement d'affectation des sols), rapportées à la population.",
+  "fetchedAt": "2026-09-20"
+}

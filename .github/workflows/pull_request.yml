@@ -1,0 +1,35 @@
+name: Vérifications
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  verifier:
+    name: Contrat de données, types et build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+
+      - name: Installer les dépendances
+        run: npm ci
+
+      # Le contrat de données d'abord : une série mal formée doit échouer ici, pas se présenter
+      # au lecteur comme une donnée manquante.
+      - name: Contrat de données
+        run: npm run validate
+
+      - name: Types
+        run: npm run typecheck
+
+      - name: Formatage
+        run: npm run format:check
+
+      - name: Build
+        run: npm run build

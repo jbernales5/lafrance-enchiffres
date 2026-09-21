@@ -1,0 +1,29 @@
+{
+  "source": {
+    "publisher": "Our World in Data",
+    "upstream": "ILO Modelled Estimates, via World Bank (2026)",
+    "url": "https://ourworldindata.org/grapher/unemployment-rate",
+    "downloadUrls": [
+      "https://ourworldindata.org/grapher/unemployment-rate.csv?v=1&csvType=filtered&useColumnShortNames=true&tab=line&time=earliest..latest&country=FRA~USA~JPN~GBR~CHN"
+    ],
+    "dataset": "unemployment-rate",
+    "citation": "ILO Modelled Estimates, via World Bank (2026) – processed by Our World in Data. “Unemployment rate – ILO” [dataset]. ILO Modelled Estimates, via World Bank, “World Development Indicators 129” [original data].",
+    "lastUpdated": "2026-07-27",
+    "title": "Unemployment rate",
+    "license": "owid",
+    "upstreamLicense": "worldbank"
+  },
+  "unit": "% de la population active",
+  "frequency": "annual",
+  "lastObservation": "2025",
+  "seriesLabels": {
+    "FRA": "France",
+    "USA": "États-Unis",
+    "JPN": "Japon",
+    "GBR": "Royaume-Uni",
+    "CHN": "Chine"
+  },
+  "script": "scripts/fetch/owid.mjs",
+  "notes": "Estimations modélisées de l'Organisation internationale du travail, diffusées par la Banque mondiale : ce ne sont pas les enquêtes emploi nationales, et les niveaux ne sont pas directement comparables à la série trimestrielle de l'Insee.",
+  "fetchedAt": "2026-09-20"
+}

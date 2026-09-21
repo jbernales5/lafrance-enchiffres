@@ -1,0 +1,34 @@
+{
+  "source": {
+    "publisher": "Insee",
+    "url": "https://www.insee.fr/fr/statistiques/serie/010755537",
+    "downloadUrls": [
+      "https://api.insee.fr/series/BDM/V1/data/SERIES_BDM/010755537+011811818+010755565+010755434+010755432+010755559+010755541"
+    ],
+    "idbanks": [
+      "010755537",
+      "011811818",
+      "010755565",
+      "010755434",
+      "010755432",
+      "010755559",
+      "010755541"
+    ],
+    "license": "etalab-2.0"
+  },
+  "unit": "milliers",
+  "frequency": "annual",
+  "seriesLabels": {
+    "ensemble": "Ensemble",
+    "hors-micro": "Hors micro-entrepreneurs (entreprises classiques)",
+    "industrie": "Industrie",
+    "construction": "Construction",
+    "commerce": "Commerce",
+    "hebergement-restauration": "Hébergement et restauration",
+    "enseignement-sante": "Administration, enseignement, santé, action sociale"
+  },
+  "notes": "Répertoire Sirene, méthode 2022, France entière : totaux annuels calculés en sommant les douze mois de données brutes ; « entreprises classiques » désigne les sociétés et entrepreneurs individuels hors micro-entrepreneurs.",
+  "lastObservation": "2025",
+  "script": "scripts/fetch/insee.mjs",
+  "fetchedAt": "2026-09-20"
+}

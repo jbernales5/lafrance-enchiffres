@@ -1,0 +1,31 @@
+{
+  "source": {
+    "publisher": "Eurostat",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/demo_mlexpec/default/table",
+    "downloadUrls": [
+      "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_mlexpec?format=JSON&lang=EN&geo=FR&geo=DE&geo=IT&geo=ES&geo=EU27_2020&geo=UK&age=Y65&sex=M&sex=F&sinceTimePeriod=1990"
+    ],
+    "dataset": "demo_mlexpec",
+    "license": "eurostat"
+  },
+  "unit": "années",
+  "frequency": "annual",
+  "seriesLabels": {
+    "FRA-hommes": "France – hommes",
+    "FRA-femmes": "France – femmes",
+    "DEU-hommes": "Allemagne – hommes",
+    "DEU-femmes": "Allemagne – femmes",
+    "ITA-hommes": "Italie – hommes",
+    "ITA-femmes": "Italie – femmes",
+    "ESP-hommes": "Espagne – hommes",
+    "ESP-femmes": "Espagne – femmes",
+    "EU27-hommes": "Union européenne (27) – hommes",
+    "EU27-femmes": "Union européenne (27) – femmes",
+    "GBR-hommes": "Royaume-Uni – hommes",
+    "GBR-femmes": "Royaume-Uni – femmes"
+  },
+  "script": "scripts/fetch/eurostat.mjs",
+  "notes": "Nombre moyen d'années restant à vivre à 65 ans, hommes et femmes, selon les conditions de mortalité de l'année (tables de mortalité Eurostat).",
+  "lastObservation": "2024",
+  "fetchedAt": "2026-09-20"
+}

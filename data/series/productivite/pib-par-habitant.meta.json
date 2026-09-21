@@ -1,0 +1,33 @@
+{
+  "source": {
+    "publisher": "Our World in Data",
+    "upstream": "Eurostat, OECD, IMF, and World Bank (2026)",
+    "url": "https://ourworldindata.org/grapher/gdp-per-capita-worldbank",
+    "downloadUrls": [
+      "https://ourworldindata.org/grapher/gdp-per-capita-worldbank.csv?v=1&csvType=filtered&useColumnShortNames=true&tab=line&time=earliest..latest&country=FRA~DEU~ITA~ESP~GBR~USA~CHN~JPN~IND"
+    ],
+    "dataset": "gdp-per-capita-worldbank",
+    "citation": "Eurostat, OECD, IMF, and World Bank (2026) – with minor processing by Our World in Data. “GDP per capita – World Bank – In constant international-$” [dataset]. Eurostat, OECD, IMF, and World Bank, “World Development Indicators 129” [original data].",
+    "lastUpdated": "2026-07-27",
+    "title": "GDP per capita",
+    "license": "owid",
+    "upstreamLicense": "a-confirmer"
+  },
+  "unit": "$ internationaux, PPA, prix constants",
+  "frequency": "annual",
+  "lastObservation": "2025",
+  "seriesLabels": {
+    "FRA": "France",
+    "DEU": "Allemagne",
+    "ITA": "Italie",
+    "ESP": "Espagne",
+    "GBR": "Royaume-Uni",
+    "USA": "États-Unis",
+    "CHN": "Chine",
+    "JPN": "Japon",
+    "IND": "Inde"
+  },
+  "script": "scripts/fetch/owid.mjs",
+  "notes": "PIB par habitant corrigé de l'inflation et des différences de coût de la vie entre pays (parité de pouvoir d'achat), d'après la Banque mondiale.",
+  "fetchedAt": "2026-09-20"
+}

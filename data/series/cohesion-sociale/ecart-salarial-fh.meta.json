@@ -1,0 +1,24 @@
+{
+  "source": {
+    "publisher": "Eurostat",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/earn_gr_gpgr2/default/table",
+    "downloadUrls": [
+      "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/earn_gr_gpgr2?format=JSON&lang=EN&geo=FR&geo=DE&geo=IT&geo=ES&geo=EU27_2020&nace_r2=B-S_X_O&unit=PC&sinceTimePeriod=2007"
+    ],
+    "dataset": "earn_gr_gpgr2",
+    "license": "eurostat"
+  },
+  "unit": "% (écart non ajusté, salaire horaire brut)",
+  "frequency": "annual",
+  "seriesLabels": {
+    "FRA": "France",
+    "DEU": "Allemagne",
+    "ITA": "Italie",
+    "ESP": "Espagne",
+    "EU27": "Union européenne (27)"
+  },
+  "script": "scripts/fetch/eurostat.mjs",
+  "notes": "Écart de rémunération non ajusté : différence entre le salaire horaire brut moyen des hommes et celui des femmes, en pourcentage du salaire masculin, entreprises de 10 salariés ou plus (industrie, construction et services hors administration publique).",
+  "lastObservation": "2024",
+  "fetchedAt": "2026-09-20"
+}

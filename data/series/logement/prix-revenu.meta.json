@@ -1,0 +1,25 @@
+{
+  "source": {
+    "publisher": "OCDE",
+    "url": "https://data-explorer.oecd.org/vis?tm=Analytical%20house%20prices%20indicators&pg=0&snb=10&vw=ov&df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_AN_HOUSE_PRICES%40DF_HOUSE_PRICES&df[ag]=OECD.ECO.MPD&df[vs]=1.0",
+    "downloadUrls": [
+      "https://sdmx.oecd.org/public/rest/data/OECD.ECO.MPD,DSD_AN_HOUSE_PRICES@DF_HOUSE_PRICES,1.0/FRA+DEU+ITA+ESP+GBR+USA.A......?format=jsondata&dimensionAtObservation=AllDimensions&startPeriod=1995"
+    ],
+    "dataset": "DSD_AN_HOUSE_PRICES@DF_HOUSE_PRICES — price to income ratio (HPI_YDH)",
+    "license": "oecd"
+  },
+  "unit": "indice, base 2015 = 100",
+  "frequency": "annual",
+  "lastObservation": "2025",
+  "seriesLabels": {
+    "FRA": "France",
+    "DEU": "Allemagne",
+    "ITA": "Italie",
+    "GBR": "Royaume-Uni",
+    "USA": "États-Unis",
+    "ESP": "Espagne"
+  },
+  "script": "scripts/fetch/oecd.mjs",
+  "notes": "Rapport entre le prix nominal des logements et le revenu disponible nominal par habitant, ramené en indice de base 100 en 2015. C'est une mesure d'accessibilité relative : elle dit comment le prix a évolué par rapport au revenu, pas combien coûte un logement.",
+  "fetchedAt": "2026-09-20"
+}

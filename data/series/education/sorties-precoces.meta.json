@@ -1,0 +1,24 @@
+{
+  "source": {
+    "publisher": "Eurostat",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/edat_lfse_14/default/table",
+    "downloadUrls": [
+      "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/edat_lfse_14?format=JSON&lang=EN&geo=FR&geo=DE&geo=IT&geo=ES&geo=EU27_2020&sex=T&unit=PC&wstatus=POP&age=Y18-24&sinceTimePeriod=2000"
+    ],
+    "dataset": "edat_lfse_14",
+    "license": "eurostat"
+  },
+  "unit": "% des 18-24 ans",
+  "frequency": "annual",
+  "seriesLabels": {
+    "FRA": "France",
+    "DEU": "Allemagne",
+    "ITA": "Italie",
+    "ESP": "Espagne",
+    "EU27": "Union européenne (27)"
+  },
+  "script": "scripts/fetch/eurostat.mjs",
+  "notes": "Part des 18-24 ans ayant au plus un diplôme du premier cycle du secondaire (CITE 0-2) et ne suivant ni études ni formation (enquête Forces de travail).",
+  "lastObservation": "2025",
+  "fetchedAt": "2026-09-20"
+}

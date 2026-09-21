@@ -1,0 +1,32 @@
+{
+  "source": {
+    "publisher": "SSMSI (ministère de l'Intérieur)",
+    "distributor": "data.gouv.fr",
+    "url": "https://www.data.gouv.fr/datasets/bases-statistiques-communale-departementale-et-regionale-de-la-delinquance-enregistree-par-la-police-et-la-gendarmerie-nationales",
+    "downloadUrls": [
+      "https://static.data.gouv.fr/resources/bases-statistiques-communale-departementale-et-regionale-de-la-delinquance-enregistree-par-la-police-et-la-gendarmerie-nationales/20260709-120055/donnee-reg-data.gouv-2025-geographie2026-produit-le2026-06-25.csv"
+    ],
+    "dataset": "REG - Base statistique régionale de la délinquance enregistrée par la police et la gendarmerie nationales",
+    "license": "etalab-2.0"
+  },
+  "unit": "faits enregistrés pour 1 000 habitants",
+  "frequency": "annual",
+  "seriesLabels": {
+    "homicides": "Homicides (victime)",
+    "coups-blessures": "Violences physiques hors cadre familial (victime)",
+    "coups-blessures-intrafamiliaux": "Violences physiques intrafamiliales (victime)",
+    "violences-sexuelles": "Violences sexuelles (victime)",
+    "vols-violents": "Vols violents sans arme (infraction)",
+    "vols-sans-violence": "Vols sans violence contre des personnes (victime entendue)",
+    "cambriolages": "Cambriolages de logement (infraction)",
+    "vols-vehicules": "Vols de véhicule (véhicule)",
+    "degradations": "Destructions et dégradations volontaires (infraction)",
+    "stupefiants-usage": "Usage de stupéfiants (mis en cause)",
+    "stupefiants-trafic": "Trafic de stupéfiants (mis en cause)",
+    "escroqueries": "Escroqueries et fraudes aux moyens de paiement (victime)"
+  },
+  "notes": "Ces chiffres sont des FAITS ENREGISTRÉS par la police et la gendarmerie nationales : ils dépendent de la propension des victimes à porter plainte et des pratiques d'enregistrement des services, et ne mesurent donc pas les faits réellement commis. La hausse des violences sexuelles enregistrées reflète ainsi largement la hausse des plaintes, pas seulement celle des faits. Taux calculés en agrégeant les bases régionales du SSMSI (France entière, DOM compris) et en rapportant les faits à la population Insee ; l'unité de compte varie selon l'indicateur (victime, infraction, véhicule, mis en cause) et les niveaux ne sont pas comparables d'un indicateur à l'autre.",
+  "lastObservation": "2025",
+  "script": "scripts/fetch/france.mjs",
+  "fetchedAt": "2026-09-20"
+}

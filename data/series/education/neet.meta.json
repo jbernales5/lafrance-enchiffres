@@ -1,0 +1,24 @@
+{
+  "source": {
+    "publisher": "Eurostat",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/edat_lfse_20/default/table",
+    "downloadUrls": [
+      "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/edat_lfse_20?format=JSON&lang=EN&geo=FR&geo=DE&geo=IT&geo=ES&geo=EU27_2020&age=Y18-24&sex=T&unit=PC&training=NO_FE_NO_NFE&wstatus=NEMP&sinceTimePeriod=2000"
+    ],
+    "dataset": "edat_lfse_20",
+    "license": "eurostat"
+  },
+  "unit": "% des 18-24 ans",
+  "frequency": "annual",
+  "seriesLabels": {
+    "FRA": "France",
+    "DEU": "Allemagne",
+    "ITA": "Italie",
+    "ESP": "Espagne",
+    "EU27": "Union européenne (27)"
+  },
+  "script": "scripts/fetch/eurostat.mjs",
+  "notes": "Jeunes de 18 à 24 ans ni en emploi, ni en études, ni en formation (NEET : non employés et sans éducation formelle ou non formelle au cours des quatre dernières semaines), enquête Forces de travail.",
+  "lastObservation": "2025",
+  "fetchedAt": "2026-09-20"
+}

@@ -1,0 +1,46 @@
+{
+  "source": {
+    "publisher": "OCDE",
+    "edition": "Tableau de bord « PISA: Education and Skills »",
+    "url": "https://www.oecd.org/en/data/dashboards/pisa-education-and-skills/performance-trends.html",
+    "downloadUrls": [
+      "https://www.oecd.org/en/data/dashboards/pisa-education-and-skills/performance-trends.html"
+    ],
+    "howToObtain": "Le tableau de bord n'est pas diffusé sur l'API SDMX de l'OCDE : chaque vue s'exporte en CSV, une par pays de comparaison. Copies versionnées : data/sources-manuelles/pisa-ocde/.",
+    "dataset": "Mean performance in mathematics / reading / science ; Trends in science, reading and mathematics performance",
+    "citation": "OCDE, Programme international pour le suivi des acquis des élèves (PISA), tableau de bord « Education and Skills ».",
+    "license": "oecd"
+  },
+  "unit": "score PISA",
+  "frequency": "annual",
+  "seriesLabels": {
+    "DEU-ecrit": "Allemagne — compréhension de l'écrit",
+    "DEU-maths": "Allemagne — culture mathématique",
+    "DEU-sciences": "Allemagne — culture scientifique",
+    "ESP-ecrit": "Espagne — compréhension de l'écrit",
+    "ESP-maths": "Espagne — culture mathématique",
+    "ESP-sciences": "Espagne — culture scientifique",
+    "FRA-ecrit": "France — compréhension de l'écrit",
+    "FRA-maths": "France — culture mathématique",
+    "FRA-sciences": "France — culture scientifique",
+    "GBR-ecrit": "Royaume-Uni — compréhension de l'écrit",
+    "GBR-maths": "Royaume-Uni — culture mathématique",
+    "GBR-sciences": "Royaume-Uni — culture scientifique",
+    "ITA-ecrit": "Italie — compréhension de l'écrit",
+    "ITA-maths": "Italie — culture mathématique",
+    "ITA-sciences": "Italie — culture scientifique",
+    "JPN-ecrit": "Japon — compréhension de l'écrit",
+    "JPN-maths": "Japon — culture mathématique",
+    "JPN-sciences": "Japon — culture scientifique",
+    "OCDE-ecrit": "Moyenne OCDE — compréhension de l'écrit",
+    "OCDE-maths": "Moyenne OCDE — culture mathématique",
+    "OCDE-sciences": "Moyenne OCDE — culture scientifique",
+    "USA-ecrit": "États-Unis — compréhension de l'écrit",
+    "USA-maths": "États-Unis — culture mathématique",
+    "USA-sciences": "États-Unis — culture scientifique"
+  },
+  "script": "scripts/manual/pisa.mjs",
+  "notes": "Score moyen des élèves de 15 ans à chaque cycle PISA. L'échelle est calibrée pour que la moyenne OCDE valait 500 points au premier cycle de chaque domaine ; un écart de 20 points correspond environ à une demi-année de scolarité. Les cycles ne sont pas annuels : ils ont lieu tous les trois ans, avec un décalage en 2022 après la pandémie.",
+  "lastObservation": "2025",
+  "fetchedAt": "2026-09-20"
+}

@@ -1,0 +1,32 @@
+{
+  "source": {
+    "publisher": "Insee",
+    "url": "https://www.insee.fr/fr/statistiques/serie/001688527",
+    "downloadUrls": [
+      "https://api.insee.fr/series/BDM/V1/data/SERIES_BDM/001688527+001688533+001688535+001688537+001688529+001688531"
+    ],
+    "idbanks": [
+      "001688527",
+      "001688533",
+      "001688535",
+      "001688537",
+      "001688529",
+      "001688531"
+    ],
+    "license": "etalab-2.0"
+  },
+  "unit": "% de la population active",
+  "frequency": "quarterly",
+  "seriesLabels": {
+    "ensemble": "Ensemble",
+    "femmes": "Femmes",
+    "hommes": "Hommes",
+    "15-24": "15-24 ans",
+    "25-49": "25-49 ans",
+    "50-plus": "50 ans ou plus"
+  },
+  "notes": "Taux de chômage au sens du BIT (enquête Emploi), France hors Mayotte, données trimestrielles corrigées des variations saisonnières ; la série « 15-24 ans » correspond aux moins de 25 ans.",
+  "lastObservation": "2026-Q2",
+  "script": "scripts/fetch/insee.mjs",
+  "fetchedAt": "2026-09-20"
+}

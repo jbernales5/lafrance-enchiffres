@@ -1,0 +1,24 @@
+{
+  "source": {
+    "publisher": "Insee",
+    "url": "https://www.insee.fr/fr/statistiques/serie/001718158",
+    "downloadUrls": [
+      "https://api.insee.fr/series/BDM/V1/data/SERIES_BDM/001718158+001718270"
+    ],
+    "idbanks": [
+      "001718158",
+      "001718270"
+    ],
+    "license": "etalab-2.0"
+  },
+  "unit": "milliers de logements (cumul sur 12 mois)",
+  "frequency": "monthly",
+  "seriesLabels": {
+    "autorises": "Logements autorisés",
+    "commences": "Logements commencés"
+  },
+  "notes": "Statistiques Sit@del2 du SDES diffusées par l'Insee, estimations en date réelle, cumul glissant sur douze mois, France hors Mayotte.",
+  "lastObservation": "2026-07",
+  "script": "scripts/fetch/insee.mjs",
+  "fetchedAt": "2026-09-20"
+}

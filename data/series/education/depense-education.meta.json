@@ -1,0 +1,42 @@
+{
+  "source": {
+    "publisher": "OCDE",
+    "url": "https://data-explorer.oecd.org/vis?df[ds]=dsDisseminateFinalDMZ&df[ag]=OECD.EDU.IMEP&df[id]=DSD_EAG_UOE_FIN%40DF_UOE_INDIC_FIN_PERSTUD",
+    "downloadUrls": [
+      "https://sdmx.oecd.org/public/rest/data/OECD.EDU.IMEP,DSD_EAG_UOE_FIN@DF_UOE_INDIC_FIN_PERSTUD,3.2/FRA+DEU+ITA+ESP+GBR+USA.FIN_PERSTUD.ISCED11_1+ISCED11_24+ISCED11_34+ISCED11_5T8._T.INST_EDU.DIR_EXP..USD_PPP_ST.SOURCE?format=jsondata&dimensionAtObservation=AllDimensions&startPeriod=2005"
+    ],
+    "dataset": "DSD_EAG_UOE_FIN@DF_UOE_INDIC_FIN_PERSTUD — expenditure on educational institutions per full-time equivalent student",
+    "license": "oecd"
+  },
+  "unit": "dollars PPA par élève, prix constants",
+  "frequency": "annual",
+  "lastObservation": "2023",
+  "seriesLabels": {
+    "USA-superieur": "États-Unis — supérieur",
+    "USA-primaire": "États-Unis — primaire",
+    "USA-college": "États-Unis — collège",
+    "GBR-primaire": "Royaume-Uni — primaire",
+    "GBR-lycee": "Royaume-Uni — lycée général",
+    "GBR-college": "Royaume-Uni — collège",
+    "GBR-superieur": "Royaume-Uni — supérieur",
+    "USA-lycee": "États-Unis — lycée général",
+    "ESP-college": "Espagne — collège",
+    "ESP-lycee": "Espagne — lycée général",
+    "ESP-primaire": "Espagne — primaire",
+    "ESP-superieur": "Espagne — supérieur",
+    "ITA-primaire": "Italie — primaire",
+    "ITA-superieur": "Italie — supérieur",
+    "ITA-college": "Italie — collège",
+    "DEU-lycee": "Allemagne — lycée général",
+    "DEU-college": "Allemagne — collège",
+    "DEU-primaire": "Allemagne — primaire",
+    "DEU-superieur": "Allemagne — supérieur",
+    "FRA-primaire": "France — primaire",
+    "FRA-college": "France — collège",
+    "FRA-superieur": "France — supérieur",
+    "FRA-lycee": "France — lycée général"
+  },
+  "script": "scripts/fetch/oecd.mjs",
+  "notes": "Dépense annuelle des établissements d'enseignement par élève en équivalent temps plein, toutes sources de financement, convertie en dollars à parité de pouvoir d'achat et exprimée en prix constants. Elle comprend la recherche pour le supérieur, ce qui explique une partie de l'écart avec les autres niveaux.",
+  "fetchedAt": "2026-09-20"
+}

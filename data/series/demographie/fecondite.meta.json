@@ -1,0 +1,32 @@
+{
+  "source": {
+    "publisher": "Our World in Data",
+    "upstream": "UN, World Population Prospects (2024)",
+    "url": "https://ourworldindata.org/grapher/children-per-woman-un",
+    "downloadUrls": [
+      "https://ourworldindata.org/grapher/children-per-woman-un.csv?v=1&csvType=filtered&useColumnShortNames=true&tab=line&time=earliest..latest&country=FRA~DEU~ITA~ESP~GBR~USA~KOR~OWID_WRL"
+    ],
+    "dataset": "children-per-woman-un",
+    "citation": "UN, World Population Prospects (2024) – processed by Our World in Data. “Fertility rate – UN WPP” [dataset]. United Nations, “World Population Prospects”; United Nations, “World Population Prospects – Interim Update” [original data].",
+    "lastUpdated": "2024-07-12",
+    "title": "Fertility rate: births per woman",
+    "license": "owid",
+    "upstreamLicense": "cc-by-3.0-igo"
+  },
+  "unit": "enfants par femme",
+  "frequency": "annual",
+  "lastObservation": "2023",
+  "seriesLabels": {
+    "FRA": "France",
+    "DEU": "Allemagne",
+    "ITA": "Italie",
+    "ESP": "Espagne",
+    "GBR": "Royaume-Uni",
+    "USA": "États-Unis",
+    "KOR": "Corée du Sud",
+    "WLD": "Monde"
+  },
+  "script": "scripts/fetch/owid.mjs",
+  "notes": "Indice conjoncturel de fécondité : nombre moyen d'enfants qu'aurait une femme au cours de sa vie aux taux de fécondité par âge de l'année (estimations ONU).",
+  "fetchedAt": "2026-09-20"
+}

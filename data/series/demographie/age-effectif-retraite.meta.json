@@ -1,0 +1,37 @@
+{
+  "source": {
+    "publisher": "Our World in Data",
+    "upstream": "OECD (2018) – Database on Average Effective Retirement Age",
+    "url": "https://ourworldindata.org/grapher/average-effective-retirement-men ; https://ourworldindata.org/grapher/average-effective-retirement-women",
+    "downloadUrls": [
+      "https://ourworldindata.org/grapher/average-effective-retirement-men.csv?v=1&csvType=filtered&useColumnShortNames=true&tab=line&time=earliest..latest&country=FRA~DEU~ITA~ESP~GBR~USA",
+      "https://ourworldindata.org/grapher/average-effective-retirement-women.csv?v=1&csvType=filtered&useColumnShortNames=true&tab=line&time=earliest..latest&country=FRA~DEU~ITA~ESP~GBR~USA"
+    ],
+    "dataset": "average-effective-retirement-men ; average-effective-retirement-women",
+    "citation": "OECD (2018) – processed by Our World in Data. “Average effective age of retirement, men (OECD)” [dataset]. OECD, “Average effective age of retirement, by gender” [original data].",
+    "lastUpdated": "2020-11-28",
+    "title": "Average effective age of retirement for men",
+    "license": "owid",
+    "upstreamLicense": "a-confirmer"
+  },
+  "unit": "années",
+  "frequency": "annual",
+  "lastObservation": "2018",
+  "seriesLabels": {
+    "FRA-hommes": "France – hommes",
+    "DEU-hommes": "Allemagne – hommes",
+    "ITA-hommes": "Italie – hommes",
+    "ESP-hommes": "Espagne – hommes",
+    "GBR-hommes": "Royaume-Uni – hommes",
+    "USA-hommes": "États-Unis – hommes",
+    "FRA-femmes": "France – femmes",
+    "DEU-femmes": "Allemagne – femmes",
+    "ITA-femmes": "Italie – femmes",
+    "ESP-femmes": "Espagne – femmes",
+    "GBR-femmes": "Royaume-Uni – femmes",
+    "USA-femmes": "États-Unis – femmes"
+  },
+  "script": "scripts/fetch/owid.mjs",
+  "notes": "Âge moyen effectif de sortie du marché du travail, estimé par l'OCDE à partir des variations des taux d'activité par âge sur cinq ans, hommes et femmes séparément.",
+  "fetchedAt": "2026-09-20"
+}

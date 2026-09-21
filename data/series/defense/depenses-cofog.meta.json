@@ -1,0 +1,25 @@
+{
+  "source": {
+    "publisher": "Eurostat",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_exp/default/table",
+    "downloadUrls": [
+      "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10a_exp?format=JSON&lang=EN&geo=FR&geo=DE&geo=IT&geo=ES&geo=EU27_2020&geo=PL&cofog99=GF02&na_item=TE&sector=S13&unit=PC_GDP&sinceTimePeriod=1995"
+    ],
+    "dataset": "gov_10a_exp",
+    "license": "eurostat"
+  },
+  "unit": "% du PIB",
+  "frequency": "annual",
+  "seriesLabels": {
+    "FRA": "France",
+    "DEU": "Allemagne",
+    "ITA": "Italie",
+    "ESP": "Espagne",
+    "EU27": "Union européenne (27)",
+    "POL": "Pologne"
+  },
+  "script": "scripts/fetch/eurostat.mjs",
+  "notes": "Dépense totale des administrations publiques en fonction « Défense » (COFOG GF02, SEC 2010). Ce périmètre comptable n'est pas celui de l'OTAN : il exclut une partie des pensions militaires et la gendarmerie, et les deux chiffres ne se comparent pas. Le même référentiel sert au diagramme des dépenses publiques.",
+  "lastObservation": "2024",
+  "fetchedAt": "2026-09-20"
+}

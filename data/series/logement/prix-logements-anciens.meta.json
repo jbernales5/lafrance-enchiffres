@@ -1,0 +1,30 @@
+{
+  "source": {
+    "publisher": "Insee",
+    "url": "https://www.insee.fr/fr/statistiques/serie/010567059",
+    "downloadUrls": [
+      "https://api.insee.fr/series/BDM/V1/data/SERIES_BDM/010567059+010567079+010567073+010567057+010567061"
+    ],
+    "idbanks": [
+      "010567059",
+      "010567079",
+      "010567073",
+      "010567057",
+      "010567061"
+    ],
+    "license": "etalab-2.0"
+  },
+  "unit": "indice, base 100 en moyenne annuelle 2015",
+  "frequency": "quarterly",
+  "seriesLabels": {
+    "FRA": "France métropolitaine",
+    "idf": "Île-de-France",
+    "province": "Province",
+    "appartements": "Appartements (France métro.)",
+    "maisons": "Maisons (France métro.)"
+  },
+  "notes": "Indices Notaires-Insee des prix des logements anciens, séries corrigées des variations saisonnières, France métropolitaine ; l'indice Province démarre fin 1994.",
+  "lastObservation": "2026-Q2",
+  "script": "scripts/fetch/insee.mjs",
+  "fetchedAt": "2026-09-20"
+}

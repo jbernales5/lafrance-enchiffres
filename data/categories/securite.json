@@ -1,0 +1,333 @@
+{
+  "slug": "securite",
+  "order": 9,
+  "title": "Sécurité et justice",
+  "short": "Sécurité et justice",
+  "lead": "Ce que la police et la justice enregistrent, et ce que cela permet de dire. Les faits enregistrés dépendent aussi des plaintes déposées et des pratiques d'enregistrement : ils ne mesurent pas directement la délinquance commise.",
+  "keyFigure": {
+    "chart": "delinquance-europe",
+    "label": "homicides volontaires enregistrés",
+    "series": "FRA-homicide",
+    "unit": "pour 100 000 hab."
+  },
+  "cautions": [
+    "Faits enregistrés n'est pas faits commis : une hausse peut venir d'une hausse des plaintes, d'un changement de procédure ou d'une campagne de sensibilisation, autant que d'une hausse réelle.",
+    "Les comparaisons entre pays reposent sur la classification internationale ICCS : les définitions sont rapprochées, jamais identiques, et les pratiques d'enregistrement diffèrent.",
+    "« Féminicide » n'est pas une catégorie légale ni statistique. L'indicateur officiel comparable est la victime tuée par son partenaire ou ex-partenaire.",
+    "Les séries commencent en 2016 pour la France : la nomenclature précédente, arrêtée en 2022, n'est pas raccordable et n'est pas reprise ici."
+  ],
+  "hero": {
+    "chart": "delinquance-europe",
+    "perspective": "homicides"
+  },
+  "charts": [
+    {
+      "id": "delinquance",
+      "title": "Faits enregistrés par la police et la gendarmerie",
+      "subtitle": "France, par type d'infraction",
+      "file": "securite/delinquance",
+      "perspectives": {
+        "violences": [
+          "homicides",
+          "coups-blessures",
+          "coups-blessures-intrafamiliaux",
+          "violences-sexuelles"
+        ],
+        "vols": [
+          "vols-violents",
+          "vols-sans-violence",
+          "cambriolages",
+          "vols-vehicules"
+        ],
+        "autres": [
+          "degradations",
+          "stupefiants-usage",
+          "stupefiants-trafic",
+          "escroqueries"
+        ]
+      },
+      "perspectiveLabels": {
+        "violences": "Violences",
+        "vols": "Vols",
+        "autres": "Autres atteintes"
+      },
+      "zeroBased": true,
+      "note": "Ce sont des faits enregistrés, pas des faits commis. Pour les violences sexuelles en particulier, la courbe suit aussi la propension à porter plainte, qui a nettement augmenté."
+    },
+    {
+      "id": "infractions-mensuelles",
+      "title": "Infractions enregistrées, mois par mois",
+      "subtitle": "Série mensuelle corrigée des variations saisonnières, France entière",
+      "file": "securite/infractions-mensuelles",
+      "perspectives": {
+        "violences": [
+          "violences-intrafamiliales",
+          "violences-hors-famille",
+          "violences-sexuelles"
+        ],
+        "vols-biens": [
+          "vols-sans-violence",
+          "degradations",
+          "cambriolages",
+          "vols-dans-vehicules",
+          "vols-vehicules",
+          "vols-accessoires"
+        ],
+        "violences-graves": [
+          "vols-violents",
+          "vols-avec-arme",
+          "homicides"
+        ],
+        "stupefiants-fraudes": [
+          "escroqueries",
+          "stupefiants-usage",
+          "stupefiants-trafic"
+        ]
+      },
+      "perspectiveLabels": {
+        "violences": "Violences aux personnes",
+        "vols-biens": "Atteintes aux biens",
+        "violences-graves": "Vols violents et homicides",
+        "stupefiants-fraudes": "Stupéfiants et fraudes"
+      },
+      "note": "Ce sont des faits enregistrés, pas des faits commis : une hausse peut venir d'un changement du comportement de plainte ou de l'activité des services autant que de la délinquance elle-même. C'est particulièrement vrai des violences intrafamiliales et sexuelles, dont la hausse suit la libération de la parole. L'unité de compte change selon l'indicateur et figure dans la légende."
+    },
+    {
+      "id": "delinquance-europe",
+      "title": "Faits enregistrés, comparaison européenne",
+      "subtitle": "Pour 100 000 habitants, classification internationale des infractions (ICCS)",
+      "file": "securite/delinquance-europe",
+      "perspectives": {
+        "homicides": [
+          "FRA-homicide",
+          "DEU-homicide",
+          "ITA-homicide",
+          "ESP-homicide"
+        ],
+        "violences": [
+          "FRA-coups",
+          "DEU-coups",
+          "ITA-coups",
+          "ESP-coups"
+        ],
+        "sexuel": [
+          "FRA-sexuel",
+          "DEU-sexuel",
+          "ITA-sexuel",
+          "ESP-sexuel"
+        ],
+        "cambriolages": [
+          "FRA-cambriolage",
+          "DEU-cambriolage",
+          "ESP-cambriolage"
+        ],
+        "vols": [
+          "FRA-vol",
+          "DEU-vol",
+          "ITA-vol",
+          "ESP-vol"
+        ],
+        "stupefiants": [
+          "FRA-stupefiants",
+          "DEU-stupefiants",
+          "ITA-stupefiants",
+          "ESP-stupefiants"
+        ]
+      },
+      "perspectiveLabels": {
+        "homicides": "Homicides",
+        "violences": "Coups et blessures",
+        "sexuel": "Violences sexuelles",
+        "cambriolages": "Cambriolages",
+        "vols": "Vols",
+        "stupefiants": "Stupéfiants"
+      },
+      "zeroBased": true,
+      "note": "Faits enregistrés par les services de police et de justice de chaque pays. Les définitions sont rapprochées par la classification ICCS, mais les pratiques d'enregistrement et la propension à porter plainte varient d'un pays à l'autre. L'Union européenne ne publie pas d'agrégat sur ces séries, et l'Italie ne déclare pas les cambriolages."
+    },
+    {
+      "id": "homicides-couple",
+      "title": "Victimes d'homicide selon le lien avec l'auteur",
+      "subtitle": "Pour 100 000 habitants, partenaire ou ex-partenaire et cercle familial",
+      "file": "securite/homicides-couple",
+      "perspectives": {
+        "france": [
+          "FRA-partenaire-femmes",
+          "FRA-partenaire-hommes",
+          "FRA-famille-femmes",
+          "FRA-famille-hommes"
+        ],
+        "europe": [
+          "FRA-partenaire-femmes",
+          "DEU-partenaire-femmes",
+          "ITA-partenaire-femmes",
+          "ESP-partenaire-femmes"
+        ]
+      },
+      "perspectiveLabels": {
+        "france": "France, femmes et hommes",
+        "europe": "Femmes, voisins européens"
+      },
+      "zeroBased": true,
+      "note": "« Féminicide » n'existe pas comme catégorie statistique. Ce que les sources officielles comptent, c'est la victime tuée par son partenaire ou ex-partenaire, distinguée ici du reste des homicides familiaux."
+    },
+    {
+      "id": "morts-routes",
+      "title": "Morts sur les routes",
+      "subtitle": "Personnes tuées dans un accident de la route, pour un million d'habitants",
+      "file": "securite/morts-routes",
+      "perspectives": {
+        "france": [
+          "FRA"
+        ],
+        "europe": [
+          "FRA",
+          "DEU",
+          "ITA",
+          "ESP",
+          "EU27"
+        ]
+      },
+      "zeroBased": true
+    },
+    {
+      "id": "auteurs-victimes",
+      "title": "Victimes et mis en cause, par sexe",
+      "subtitle": "Personnes enregistrées chaque année par la police et la gendarmerie",
+      "file": "securite/auteurs-victimes",
+      "perspectives": {
+        "violences-intrafamiliales": [
+          "violences-intrafamiliales-victimes-femmes",
+          "violences-intrafamiliales-victimes-hommes",
+          "violences-intrafamiliales-mis-en-cause-femmes",
+          "violences-intrafamiliales-mis-en-cause-hommes"
+        ],
+        "violences-hors-famille": [
+          "violences-hors-famille-victimes-femmes",
+          "violences-hors-famille-victimes-hommes",
+          "violences-hors-famille-mis-en-cause-femmes",
+          "violences-hors-famille-mis-en-cause-hommes"
+        ],
+        "violences-sexuelles": [
+          "violences-sexuelles-victimes-femmes",
+          "violences-sexuelles-victimes-hommes",
+          "violences-sexuelles-mis-en-cause-femmes",
+          "violences-sexuelles-mis-en-cause-hommes"
+        ],
+        "viols": [
+          "viols-victimes-femmes",
+          "viols-victimes-hommes",
+          "viols-mis-en-cause-femmes",
+          "viols-mis-en-cause-hommes"
+        ],
+        "homicides": [
+          "homicides-victimes-femmes",
+          "homicides-victimes-hommes",
+          "homicides-mis-en-cause-femmes",
+          "homicides-mis-en-cause-hommes"
+        ],
+        "tentatives-homicide": [
+          "tentatives-homicide-victimes-femmes",
+          "tentatives-homicide-victimes-hommes",
+          "tentatives-homicide-mis-en-cause-femmes",
+          "tentatives-homicide-mis-en-cause-hommes"
+        ],
+        "vols-avec-arme": [
+          "vols-avec-arme-victimes-femmes",
+          "vols-avec-arme-victimes-hommes",
+          "vols-avec-arme-mis-en-cause-femmes",
+          "vols-avec-arme-mis-en-cause-hommes"
+        ],
+        "vols-violents": [
+          "vols-violents-victimes-femmes",
+          "vols-violents-victimes-hommes",
+          "vols-violents-mis-en-cause-femmes",
+          "vols-violents-mis-en-cause-hommes"
+        ],
+        "vols-sans-violence": [
+          "vols-sans-violence-victimes-femmes",
+          "vols-sans-violence-victimes-hommes",
+          "vols-sans-violence-mis-en-cause-femmes",
+          "vols-sans-violence-mis-en-cause-hommes"
+        ],
+        "cambriolages": [
+          "cambriolages-victimes-femmes",
+          "cambriolages-victimes-hommes",
+          "cambriolages-mis-en-cause-femmes",
+          "cambriolages-mis-en-cause-hommes"
+        ],
+        "vols-vehicules": [
+          "vols-vehicules-victimes-femmes",
+          "vols-vehicules-victimes-hommes",
+          "vols-vehicules-mis-en-cause-femmes",
+          "vols-vehicules-mis-en-cause-hommes"
+        ],
+        "vols-dans-vehicules": [
+          "vols-dans-vehicules-victimes-femmes",
+          "vols-dans-vehicules-victimes-hommes",
+          "vols-dans-vehicules-mis-en-cause-femmes",
+          "vols-dans-vehicules-mis-en-cause-hommes"
+        ],
+        "vols-accessoires": [
+          "vols-accessoires-victimes-femmes",
+          "vols-accessoires-victimes-hommes",
+          "vols-accessoires-mis-en-cause-femmes",
+          "vols-accessoires-mis-en-cause-hommes"
+        ],
+        "degradations": [
+          "degradations-victimes-femmes",
+          "degradations-victimes-hommes",
+          "degradations-mis-en-cause-femmes",
+          "degradations-mis-en-cause-hommes"
+        ],
+        "escroqueries": [
+          "escroqueries-victimes-femmes",
+          "escroqueries-victimes-hommes",
+          "escroqueries-mis-en-cause-femmes",
+          "escroqueries-mis-en-cause-hommes"
+        ]
+      },
+      "perspectiveLabels": {
+        "violences-intrafamiliales": "Violences physiques intrafamiliales",
+        "violences-hors-famille": "Violences physiques hors cadre familial",
+        "violences-sexuelles": "Violences sexuelles",
+        "viols": "Viols et tentatives de viol",
+        "homicides": "Homicides",
+        "tentatives-homicide": "Tentatives d'homicide",
+        "vols-avec-arme": "Vols avec arme",
+        "vols-violents": "Vols violents sans arme",
+        "vols-sans-violence": "Vols sans violence",
+        "cambriolages": "Cambriolages de logement",
+        "vols-vehicules": "Vols de véhicule",
+        "vols-dans-vehicules": "Vols dans les véhicules",
+        "vols-accessoires": "Vols d'accessoires sur véhicules",
+        "degradations": "Destructions et dégradations",
+        "escroqueries": "Escroqueries et fraudes"
+      },
+      "note": "« Mis en cause » ne veut pas dire condamné : c'est une personne contre laquelle les services réunissent des indices, avant toute décision de justice. Le contraste entre les deux courbes est ce qui se lit le mieux ici : sur les violences intrafamiliales et les violences sexuelles, les victimes sont très majoritairement des femmes et les mis en cause très majoritairement des hommes. Les tranches d'âge ne sont pas comparables entre les deux bases, seul le sexe l'est."
+    },
+    {
+      "id": "prisons",
+      "title": "Population carcérale et taux d'occupation",
+      "subtitle": "Personnes détenues pour 100 000 habitants, France et voisins",
+      "baseLabel": "Détenus par habitant",
+      "file": "securite/prisons",
+      "note": "La détention provisoire est comprise : une partie des personnes comptées ici sont présumées innocentes. Le niveau français est proche de celui de l'Espagne et loin de celui de l'Allemagne, mais c'est la deuxième lecture, la densité, qui porte le débat sur la surpopulation.",
+      "variants": [
+        {
+          "id": "densite",
+          "label": "Densité carcérale",
+          "subtitle": "Nombre de détenus pour 100 places opérationnelles",
+          "file": "securite/prisons-densite",
+          "thresholds": [
+            {
+              "value": 100,
+              "label": "Autant de détenus que de places"
+            }
+          ],
+          "note": "Au-dessus de la ligne, il y a plus de détenus que de places. La France y est installée depuis plus de quinze ans ; l'Allemagne, l'Espagne et la Pologne restent en dessous."
+        }
+      ]
+    }
+  ]
+}

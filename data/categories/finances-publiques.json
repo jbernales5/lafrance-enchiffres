@@ -1,0 +1,192 @@
+{
+  "slug": "finances-publiques",
+  "order": 1,
+  "title": "Finances publiques et capacité à décider",
+  "short": "Finances publiques",
+  "lead": "La dette, le déficit et la charge d'intérêts fixent la marge de manœuvre de tout gouvernement. On les regarde sur la durée, en regard des voisins européens, avec les recettes toujours à côté des dépenses.",
+  "keyFigure": {
+    "chart": "dette",
+    "label": "dette publique au sens de Maastricht",
+    "unit": "% du PIB"
+  },
+  "cautions": [
+    "Les comptes nationaux sont en base 2020 depuis 2024 : les séries Insee et Eurostat ont été révisées, ne pas les mélanger avec des extractions antérieures.",
+    "Les comptes des administrations publiques sont semi-définitifs pendant environ trois ans : les dernières années de chaque série sont révisables.",
+    "Dépenses et recettes se lisent ensemble : un niveau de dépenses seul ne dit rien sans le taux de prélèvements qui va avec."
+  ],
+  "charts": [
+    {
+      "id": "budget",
+      "title": "Où va l'argent public ?",
+      "subtitle": "Recettes à gauche, dépenses à droite, en milliards d'euros",
+      "file": "finances-publiques/sankey-2024",
+      "type": "sankey",
+      "forecast": {
+        "year": "2026",
+        "file": "finances-publiques/sankey-2026-prevision"
+      },
+      "note": "Le flux sombre est le déficit, le flux brun les intérêts de la dette, sortis des services publics généraux où la nomenclature COFOG les range. Le survol d'une fonction montre son détail."
+    },
+    {
+      "id": "dette",
+      "title": "Dette publique",
+      "subtitle": "Dette brute au sens de Maastricht, en % du PIB",
+      "file": "finances-publiques/dette-europe",
+      "perspectives": {
+        "france": [
+          "FRA"
+        ],
+        "europe": [
+          "FRA",
+          "DEU",
+          "ITA",
+          "ESP",
+          "EU27"
+        ]
+      },
+      "thresholds": [
+        {
+          "value": 60,
+          "label": "60 % (Maastricht)"
+        }
+      ],
+      "zeroBased": true,
+      "variants": [
+        {
+          "id": "monde-fmi",
+          "label": "Monde (FMI)",
+          "file": "finances-publiques/dette-monde",
+          "warning": "Source différente : cette vue vient du Fonds monétaire international, pas d'Eurostat. La dette n'y est pas définie au sens du traité de Maastricht ; pour la France les deux séries sont proches mais ne se superposent pas. Les projections du FMI au-delà de la dernière année constatée ne sont pas affichées.",
+          "subtitle": "Dette brute des administrations publiques, en % du PIB, définition du FMI"
+        }
+      ]
+    },
+    {
+      "id": "deficit",
+      "title": "Déficit public",
+      "subtitle": "Solde des administrations publiques, en % du PIB (négatif = déficit)",
+      "file": "finances-publiques/deficit",
+      "perspectives": {
+        "france": [
+          "FRA"
+        ],
+        "europe": [
+          "FRA",
+          "DEU",
+          "ITA",
+          "ESP",
+          "EU27"
+        ]
+      },
+      "thresholds": [
+        {
+          "value": -3,
+          "label": "−3 % (Maastricht)"
+        }
+      ],
+      "zeroBased": true
+    },
+    {
+      "id": "interets",
+      "title": "Charge d'intérêts de la dette",
+      "subtitle": "Intérêts versés par les administrations publiques, en % du PIB",
+      "file": "finances-publiques/charge-interets-pib",
+      "perspectives": {
+        "france": [
+          "FRA"
+        ],
+        "europe": [
+          "FRA",
+          "DEU",
+          "ITA",
+          "ESP",
+          "EU27"
+        ]
+      },
+      "zeroBased": true,
+      "note": "Un poste qui s'impose à tous les autres et qui ne peut être décalé : il se paie avant l'école, la défense ou la santé.",
+      "variants": [
+        {
+          "id": "monde-fmi",
+          "label": "Monde (FMI)",
+          "file": "finances-publiques/charge-interets-monde",
+          "warning": "Source différente : Fonds monétaire international, base de finances publiques historiques. La définition n'est pas le poste D41 du SEC 2010 utilisé par Eurostat dans les autres vues : les niveaux ne se comparent pas directement.",
+          "subtitle": "Intérêts payés sur la dette publique, en % du PIB, définition du FMI"
+        }
+      ]
+    },
+    {
+      "id": "interets-mdeur",
+      "title": "Charge d'intérêts, en milliards d'euros",
+      "subtitle": "Intérêts versés par les administrations publiques, en euros courants",
+      "file": "finances-publiques/charge-interets-mdeur",
+      "zeroBased": true,
+      "perspectives": {
+        "france": [
+          "FRA"
+        ],
+        "europe": [
+          "FRA",
+          "DEU",
+          "ITA",
+          "ESP",
+          "EU27"
+        ]
+      },
+      "note": "En euros : la comparaison n'a de sens qu'entre pays de la zone. Pour les pays hors Union européenne, la vue Monde de la charge d'intérêts en pourcentage du PIB reste la seule comparable."
+    },
+    {
+      "id": "interets-habitant",
+      "title": "Charge d'intérêts par habitant",
+      "subtitle": "Intérêts versés par les administrations publiques rapportés à la population moyenne de l'année",
+      "file": "finances-publiques/charge-interets-habitant",
+      "perspectives": {
+        "france": [
+          "FRA"
+        ],
+        "europe": [
+          "FRA",
+          "DEU",
+          "ITA",
+          "ESP",
+          "EU27"
+        ]
+      },
+      "zeroBased": true,
+      "note": "Deux jeux Eurostat divisés l'un par l'autre : intérêts en euros et population moyenne. Aucune conversion de monnaie, donc pas de pays hors Union européenne."
+    },
+    {
+      "id": "depenses-recettes",
+      "title": "Dépenses et recettes publiques",
+      "subtitle": "En % du PIB. Le déficit se matérialise comme l'écart entre les deux courbes.",
+      "file": "finances-publiques/depenses-recettes",
+      "perspectives": {
+        "france": [
+          "FRA-depenses",
+          "FRA-recettes"
+        ],
+        "europe": [
+          "FRA-depenses",
+          "FRA-recettes",
+          "DEU-depenses",
+          "DEU-recettes",
+          "EU27-depenses",
+          "EU27-recettes"
+        ]
+      }
+    },
+    {
+      "id": "abstention",
+      "title": "Abstention aux élections",
+      "subtitle": "Premier tour des présidentielles et des législatives, en % des inscrits",
+      "file": "finances-publiques/abstention",
+      "zeroBased": true,
+      "connectNulls": true,
+      "note": "Reconstituée à partir des résultats officiels bureau par bureau. Avant 2017, le champ des fichiers disponibles diffère légèrement de celui du ministère de l'Intérieur, d'où des écarts de quelques dixièmes de point."
+    }
+  ],
+  "hero": {
+    "chart": "dette",
+    "perspective": "europe"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "source": {
+    "publisher": "DREES",
+    "url": "https://data.drees.solidarites-sante.gouv.fr/explore/dataset/4230_indicateurs-de-pauvrete-avant-et-apres-redistribution-de-niveau-de-vie-et-d/information/",
+    "downloadUrls": [
+      "https://data.drees.solidarites-sante.gouv.fr/api/explore/v2.1/catalog/datasets/4230_indicateurs-de-pauvrete-avant-et-apres-redistribution-de-niveau-de-vie-et-d/attachments/pauvrete_redistribution_decomposition_revenu_2012_2023_vf_xlsx"
+    ],
+    "dataset": "Pauvreté avant et après redistribution, niveau de vie et décomposition du revenu — Tableaux 2a et 2b",
+    "license": "etalab-2.0"
+  },
+  "unit": "% de la population",
+  "frequency": "annual",
+  "seriesLabels": {
+    "avant": "Taux de pauvreté avant redistribution",
+    "apres": "Taux de pauvreté après redistribution"
+  },
+  "notes": "Part de la population vivant sous le seuil de 60 % du niveau de vie médian, mesurée avant puis après redistribution : l'écart entre les deux courbes est précisément ce que corrigent les impôts directs et les prestations sociales (prestations familiales, aides au logement, minima sociaux, prime d'activité, moins l'impôt sur le revenu, la CSG-CRDS et la taxe d'habitation). Enquête Revenus fiscaux et sociaux (Insee-DGFiP-CNAF-CNAV-CCMSA), traitements DREES, France métropolitaine ; 2020 est absente (enquête fragilisée) et la refonte de l'ERFS en 2021 crée une rupture avec les années antérieures.",
+  "lastObservation": "2023",
+  "script": "scripts/fetch/france.mjs",
+  "fetchedAt": "2026-09-20"
+}

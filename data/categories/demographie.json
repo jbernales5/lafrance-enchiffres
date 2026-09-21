@@ -1,0 +1,276 @@
+{
+  "slug": "demographie",
+  "order": 4,
+  "title": "Démographie, retraites et vieillissement",
+  "short": "Démographie et retraites",
+  "lead": "Naissances, décès, espérance de vie, âge de départ et équilibre du système de retraite. Les courbes longues, avec les voisins européens en regard.",
+  "keyFigure": {
+    "chart": "fecondite",
+    "label": "indicateur conjoncturel de fécondité",
+    "unit": "enfants par femme"
+  },
+  "cautions": [
+    "Les projections de population et de retraites changent à chaque édition : on date chaque projection et on la distingue de l'observé par le style de trait.",
+    "France entière et France métropolitaine ne donnent pas les mêmes taux ; la source de chaque graphe précise le champ.",
+    "L'âge effectif de sortie du marché du travail n'est pas l'âge légal de la retraite : la série OCDE utilisée ici s'arrête en 2018."
+  ],
+  "charts": [
+    {
+      "id": "naissances-deces",
+      "title": "Naissances, décès et solde naturel",
+      "subtitle": "Milliers par an, France métropolitaine (série homogène depuis 1946)",
+      "file": "demographie/naissances-deces",
+      "note": "Le croisement des deux courbes est le fait démographique majeur des dernières années.",
+      "perspectives": {
+        "france": [
+          "naissances",
+          "deces",
+          "solde-naturel"
+        ]
+      }
+    },
+    {
+      "id": "fecondite",
+      "title": "Fécondité",
+      "subtitle": "Enfants par femme. Le seuil de renouvellement des générations est 2,1.",
+      "file": "demographie/fecondite",
+      "perspectives": {
+        "france": [
+          "FRA"
+        ],
+        "europe": [
+          "FRA",
+          "DEU",
+          "ITA",
+          "ESP",
+          "GBR"
+        ],
+        "monde": [
+          "FRA",
+          "USA",
+          "KOR",
+          "WLD"
+        ]
+      },
+      "thresholds": [
+        {
+          "value": 2.1,
+          "label": "2,1 (renouvellement)"
+        }
+      ],
+      "zeroBased": true
+    },
+    {
+      "id": "esperance-de-vie",
+      "title": "Espérance de vie à la naissance",
+      "subtitle": "Années, ensemble de la population",
+      "file": "demographie/esperance-de-vie",
+      "perspectives": {
+        "france": [
+          "FRA"
+        ],
+        "europe": [
+          "FRA",
+          "DEU",
+          "ITA",
+          "ESP",
+          "GBR"
+        ],
+        "monde": [
+          "FRA",
+          "USA",
+          "JPN",
+          "CHN",
+          "IND"
+        ]
+      }
+    },
+    {
+      "id": "esperance-vie-65",
+      "title": "Espérance de vie à 65 ans",
+      "subtitle": "Années restant à vivre à 65 ans, femmes et hommes. La vue Europe compare les femmes.",
+      "file": "demographie/esperance-vie-65",
+      "perspectives": {
+        "france": [
+          "FRA-femmes",
+          "FRA-hommes"
+        ],
+        "europe": [
+          "FRA-femmes",
+          "DEU-femmes",
+          "ITA-femmes",
+          "ESP-femmes",
+          "EU27-femmes"
+        ]
+      }
+    },
+    {
+      "id": "dependance",
+      "title": "Ratio de dépendance des plus de 65 ans",
+      "subtitle": "Personnes de 65 ans ou plus pour 100 personnes de 15 à 64 ans",
+      "file": "demographie/ratio-dependance",
+      "perspectives": {
+        "france": [
+          "FRA"
+        ],
+        "europe": [
+          "FRA",
+          "DEU",
+          "ITA",
+          "ESP",
+          "EU27"
+        ]
+      },
+      "zeroBased": true
+    },
+    {
+      "id": "depenses-retraites",
+      "title": "Dépenses de retraite",
+      "subtitle": "En % du PIB, observé depuis 2002 et projeté jusqu'en 2070",
+      "file": "demographie/depenses-retraites",
+      "note": "Le trait plein est mesuré, le pointillé est une projection. Elle suppose le scénario de référence du COR : fécondité de 1,45 enfant par femme à partir de 2028, solde migratoire net de 150 000 personnes par an, législation inchangée.",
+      "zeroBased": false
+    },
+    {
+      "id": "cotisants-retraites",
+      "title": "Cotisants par retraité",
+      "subtitle": "Nombre de cotisants pour un retraité de droit direct, observé et projeté",
+      "file": "demographie/ratio-cotisants",
+      "note": "C'est le rapport démographique du système : combien de cotisants financent un retraité. Le pointillé est la projection du scénario de référence du COR, pas une mesure."
+    },
+    {
+      "id": "age-retraite",
+      "title": "Âge effectif de sortie du marché du travail",
+      "subtitle": "Années, hommes et femmes. La vue Europe compare les hommes.",
+      "file": "demographie/age-effectif-retraite",
+      "perspectives": {
+        "france": [
+          "FRA-hommes",
+          "FRA-femmes"
+        ],
+        "europe": [
+          "FRA-hommes",
+          "DEU-hommes",
+          "ITA-hommes",
+          "ESP-hommes",
+          "GBR-hommes"
+        ]
+      }
+    },
+    {
+      "id": "mortalite-infantile",
+      "title": "Mortalité infantile",
+      "subtitle": "Décès avant un an pour 1 000 naissances vivantes",
+      "file": "demographie/mortalite-infantile",
+      "perspectives": {
+        "france": [
+          "FRA"
+        ],
+        "europe": [
+          "FRA",
+          "DEU",
+          "ITA",
+          "ESP",
+          "EU27"
+        ]
+      },
+      "zeroBased": true
+    },
+    {
+      "id": "suicide",
+      "title": "Décès par suicide",
+      "subtitle": "Taux standardisé sur l'âge, pour 100 000 habitants",
+      "file": "demographie/suicide",
+      "perspectives": {
+        "france": [
+          "FRA-hommes",
+          "FRA-femmes"
+        ],
+        "europe": [
+          "FRA",
+          "DEU",
+          "ITA",
+          "ESP",
+          "EU27"
+        ]
+      },
+      "perspectiveLabels": {
+        "france": "France, par sexe",
+        "europe": "Voisins européens"
+      },
+      "zeroBased": true,
+      "note": "Taux standardisé sur la structure par âge de la population européenne : les pays et les années sont comparables malgré leur pyramide des âges différente."
+    },
+    {
+      "id": "bonne-sante",
+      "title": "Espérance de vie en bonne santé",
+      "subtitle": "Années vécues sans limitation d'activité",
+      "file": "demographie/esperance-vie-bonne-sante",
+      "perspectives": {
+        "naissance": [
+          "FRA-naissance-femmes",
+          "FRA-naissance-hommes"
+        ],
+        "a-65-ans": [
+          "FRA-65-femmes",
+          "FRA-65-hommes"
+        ],
+        "europe": [
+          "FRA-naissance-femmes",
+          "DEU-naissance-femmes",
+          "ITA-naissance-femmes",
+          "ESP-naissance-femmes",
+          "EU27-naissance-femmes"
+        ]
+      },
+      "perspectiveLabels": {
+        "naissance": "À la naissance",
+        "a-65-ans": "À 65 ans",
+        "europe": "Voisins européens, femmes à la naissance"
+      },
+      "note": "À lire avec l'espérance de vie : vivre plus longtemps ne veut pas dire vivre plus longtemps sans limitation d'activité."
+    },
+    {
+      "id": "asile",
+      "title": "Demandes d'asile",
+      "subtitle": "Primo-demandeurs pour 100 000 habitants",
+      "file": "demographie/asile-habitant",
+      "perspectives": {
+        "france": [
+          "FRA"
+        ],
+        "europe": [
+          "FRA",
+          "DEU",
+          "ITA",
+          "ESP",
+          "EU27"
+        ]
+      },
+      "zeroBased": true,
+      "note": "Demandes déposées pour la première fois, hors demandes réitérées. Ce n'est ni l'immigration totale, ni le nombre de titres de séjour délivrés.",
+      "variants": [
+        {
+          "id": "effectifs",
+          "label": "En nombre",
+          "subtitle": "Primo-demandeurs d'asile, effectifs annuels",
+          "file": "demographie/asile",
+          "note": "Mêmes données, en effectifs plutôt qu'en taux : utile pour la France seule, trompeur entre pays de tailles différentes."
+        }
+      ]
+    },
+    {
+      "id": "immigres",
+      "title": "Part des immigrés dans la population",
+      "subtitle": "Personnes nées étrangères à l'étranger et résidant en France",
+      "file": "demographie/immigres",
+      "zeroBased": true,
+      "connectNulls": true,
+      "note": "Un immigré est une personne née étrangère à l'étranger ; beaucoup ont depuis acquis la nationalité française. Les personnes nées françaises à l'étranger n'en font pas partie. Recensements jusqu'en 1999, estimations annuelles ensuite."
+    }
+  ],
+  "hero": {
+    "chart": "fecondite",
+    "perspective": "europe"
+  }
+}

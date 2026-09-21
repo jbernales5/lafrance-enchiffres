@@ -1,0 +1,171 @@
+{
+  "$comment": "Catalogue des licences des données redistribuées. Chaque .meta.json y renvoie par son identifiant. DATA-LICENSE.md en est la version lisible. `verifiedAt` est la date à laquelle la page de conditions a été relue ; `status` vaut ouverte, attribution, restreinte ou a-confirmer.",
+  "licenses": {
+    "etalab-2.0": {
+      "name": "Licence Ouverte / Open Licence 2.0 (Etalab)",
+      "url": "https://www.etalab.gouv.fr/licence-ouverte-open-licence/",
+      "status": "ouverte",
+      "summary": "Réutilisation libre, y compris commerciale, sous réserve de mentionner la source et la date de dernière mise à jour, et de ne pas altérer le sens de l'information.",
+      "verifiedAt": "2026-09-20",
+      "verifiedFrom": "https://www.insee.fr/fr/information/2381863"
+    },
+    "eurostat": {
+      "name": "Politique de réutilisation Eurostat (décision 2011/833/UE)",
+      "url": "https://ec.europa.eu/eurostat/about-us/policies/copyright",
+      "status": "attribution",
+      "summary": "Reproduction et rediffusion autorisées, y compris commerciales, à condition de citer Eurostat comme source et de signaler toute adaptation. Ne couvre pas les contenus de tiers identifiables comme tels.",
+      "attribution": "Source : Eurostat",
+      "verifiedAt": "2026-09-20",
+      "verifiedFrom": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Copyright/licence_policy"
+    },
+    "cc-by-4.0": {
+      "name": "Creative Commons Attribution 4.0 International",
+      "url": "https://creativecommons.org/licenses/by/4.0/deed.fr",
+      "status": "ouverte",
+      "summary": "Reproduction, distribution et adaptation libres, y compris commerciales, avec attribution et indication des modifications.",
+      "verifiedAt": "2026-09-20"
+    },
+    "cc-by-3.0-igo": {
+      "name": "Creative Commons Attribution 3.0 IGO",
+      "url": "https://creativecommons.org/licenses/by/3.0/igo/",
+      "status": "ouverte",
+      "summary": "Réutilisation libre avec attribution ; version destinée aux organisations intergouvernementales.",
+      "verifiedAt": "2026-09-20"
+    },
+    "oecd": {
+      "name": "Conditions de l'OCDE — CC BY 4.0 par défaut",
+      "url": "https://www.oecd.org/en/about/terms-conditions.html",
+      "status": "ouverte",
+      "summary": "Depuis le 1er juillet 2024, la licence par défaut des publications et données de l'OCDE est CC BY 4.0. Une adaptation doit porter la mention « This is an adaptation of an original work by the OECD ».",
+      "attribution": "Source : OCDE",
+      "verifiedAt": "2026-09-20"
+    },
+    "imf-data": {
+      "name": "Conditions du FMI — données statistiques",
+      "url": "https://www.imf.org/en/about/copyright-and-terms",
+      "status": "attribution",
+      "summary": "Le FMI distingue son contenu éditorial, qui ne peut être republié hors de ses sites, de ses données statistiques : celles-ci peuvent être téléchargées, extraites, copiées, dérivées, publiées et distribuées, à condition qu'elles apparaissent fidèlement et avec attribution au FMI comme source.",
+      "attribution": "Source : Fonds monétaire international, World Economic Outlook",
+      "verifiedAt": "2026-09-20"
+    },
+    "sipri": {
+      "name": "Conditions du SIPRI",
+      "url": "https://www.sipri.org/about/terms-and-conditions",
+      "status": "attribution",
+      "summary": "Réutilisation non commerciale libre avec attribution. Une autorisation écrite est requise pour reproduire directement plus de 10 % d'un jeu de données, et pour tout usage commercial.",
+      "attribution": "Information from the Stockholm International Peace Research Institute",
+      "verifiedAt": "2026-09-20"
+    },
+    "owid": {
+      "name": "Our World in Data — CC BY 4.0 sur son propre travail",
+      "url": "https://ourworldindata.org/faqs",
+      "status": "ouverte",
+      "summary": "OWID place ses graphiques et son travail de traitement sous CC BY 4.0, et rappelle que les données de tiers qu'il republie restent soumises à la licence de leur producteur d'origine. C'est donc toujours la licence amont qui commande.",
+      "attribution": "Our World in Data",
+      "verifiedAt": "2026-09-20"
+    },
+    "worldbank": {
+      "name": "Banque mondiale — données ouvertes",
+      "url": "https://datacatalog.worldbank.org/public-licenses",
+      "status": "ouverte",
+      "summary": "CC BY 4.0 est la licence par défaut des jeux produits par la Banque mondiale elle-même. Les jeux provenant de tiers gardent les conditions de leur producteur.",
+      "attribution": "Source : Banque mondiale",
+      "verifiedAt": "2026-09-20"
+    },
+    "a-confirmer": {
+      "name": "Conditions non vérifiées",
+      "url": null,
+      "status": "a-confirmer",
+      "summary": "Le producteur ne publie pas de conditions de réutilisation explicites, ou elles n'ont pas encore été relues. La série est citée et attribuée, mais sa redistribution n'est pas couverte par une licence identifiée. Voir DATA-LICENSE.md.",
+      "verifiedAt": null
+    }
+  },
+  "publishers": {
+    "Eurostat": {
+      "license": "eurostat"
+    },
+    "Insee": {
+      "license": "etalab-2.0"
+    },
+    "DREES": {
+      "license": "etalab-2.0"
+    },
+    "CNAF": {
+      "license": "etalab-2.0"
+    },
+    "SSMSI (ministère de l'Intérieur)": {
+      "license": "etalab-2.0"
+    },
+    "Ministère de l'Intérieur et CDSP / Sciences Po": {
+      "license": "etalab-2.0"
+    },
+    "DEPP (ministère de l'Éducation nationale)": {
+      "license": "etalab-2.0"
+    },
+    "Conseil d'orientation des retraites (COR)": {
+      "note": "Organisme public français. Ses rapports relèvent du régime de réutilisation des documents administratifs, mais le site ne publie pas de licence explicite : à confirmer auprès du COR.",
+      "license": "a-confirmer"
+    },
+    "OCDE": {
+      "license": "oecd"
+    },
+    "Fonds monétaire international": {
+      "license": "imf-data"
+    },
+    "World Inequality Database (WID.world)": {
+      "note": "Le site ne publie pas de conditions de réutilisation explicites. La citation académique complète est portée par le champ `citation` de chaque série.",
+      "license": "a-confirmer"
+    },
+    "Our World in Data": {
+      "license": "owid"
+    }
+  },
+  "upstream": {
+    "Global Carbon Budget": {
+      "note": "CC BY 4.0 annoncée par le projet ; à relire à chaque millésime.",
+      "license": "cc-by-4.0"
+    },
+    "Stockholm International Peace Research Institute": {
+      "license": "sipri"
+    },
+    "UN, World Population Prospects": {
+      "license": "cc-by-3.0-igo"
+    },
+    "Ember": {
+      "license": "cc-by-4.0"
+    },
+    "Copernicus Climate Change Service": {
+      "note": "Licence Copernicus (accès libre avec attribution) : formulation exacte à reprendre du contrat de licence C3S.",
+      "license": "a-confirmer"
+    },
+    "Feenstra et al. – Penn World Table": {
+      "license": "cc-by-4.0"
+    },
+    "ILO Modelled Estimates, via World Bank": {
+      "license": "worldbank"
+    },
+    "UNESCO UIS, via World Bank": {
+      "license": "worldbank"
+    },
+    "The Military Balance - International Institute for Strategic Studies, via World Bank": {
+      "note": "L'IISS diffuse The Military Balance sous conditions propres, plus restrictives que le catalogue ouvert de la Banque mondiale : à vérifier avant de continuer à redistribuer cette série.",
+      "license": "a-confirmer"
+    },
+    "OECD – Database on Average Effective Retirement Age": {
+      "note": "Jeu publié en 2018, antérieur au passage de l'OCDE à CC BY 4.0 par défaut (1er juillet 2024).",
+      "license": "a-confirmer"
+    },
+    "Riley (2005); Zijdeman et al. (2015); HMD (2025); UN WPP (2024)": {
+      "note": "Série composite : quatre producteurs aux conditions différentes.",
+      "license": "a-confirmer"
+    },
+    "Eurostat, OECD, IMF, and World Bank": {
+      "note": "Série composite : reprendre la licence la plus restrictive des quatre.",
+      "license": "a-confirmer"
+    },
+    "Insee, comptes nationaux (base 2020)": {
+      "license": "etalab-2.0",
+      "note": "Produit par l'Insee, diffusé par Eurostat dans le cadre du SEC 2010."
+    }
+  }
+}

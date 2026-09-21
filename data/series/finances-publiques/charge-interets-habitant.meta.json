@@ -1,0 +1,25 @@
+{
+  "source": {
+    "publisher": "Eurostat",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/gov_10a_main/default/table",
+    "downloadUrls": [
+      "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/gov_10a_main?format=JSON&lang=EN&geo=FR&geo=DE&geo=IT&geo=ES&geo=EU27_2020&sector=S13&na_item=D41PAY&unit=MIO_EUR&sinceTimePeriod=1995",
+      "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/demo_gind?format=JSON&lang=EN&geo=FR&geo=DE&geo=IT&geo=ES&geo=EU27_2020&indic_de=AVG&sinceTimePeriod=1995"
+    ],
+    "dataset": "gov_10a_main, demo_gind",
+    "license": "eurostat"
+  },
+  "unit": "euros par habitant",
+  "frequency": "annual",
+  "seriesLabels": {
+    "FRA": "France",
+    "DEU": "Allemagne",
+    "ITA": "Italie",
+    "ESP": "Espagne",
+    "EU27": "Union européenne (27)"
+  },
+  "script": "scripts/fetch/eurostat.mjs",
+  "notes": "Intérêts versés par les administrations publiques (SEC 2010, D41) divisés par la population moyenne de l'année. Deux jeux Eurostat, une seule monnaie : la comparaison ne vaut donc que pour l'Union européenne.",
+  "lastObservation": "2025",
+  "fetchedAt": "2026-09-20"
+}

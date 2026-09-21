@@ -1,0 +1,26 @@
+{
+  "source": {
+    "publisher": "Our World in Data",
+    "upstream": "Global Carbon Budget (2025); Population based on various sources (2024)",
+    "url": "https://ourworldindata.org/grapher/prod-cons-co2-per-capita",
+    "downloadUrls": [
+      "https://ourworldindata.org/grapher/prod-cons-co2-per-capita.csv?v=1&csvType=filtered&useColumnShortNames=true&tab=line&time=earliest..latest&country=FRA"
+    ],
+    "dataset": "prod-cons-co2-per-capita",
+    "citation": "Global Carbon Budget (2025); Population based on various sources (2024) – with major processing by Our World in Data. “CO₂ emissions per capita” [dataset]. Global Carbon Project, “Global Carbon Budget v15”; Various sources, “Population” [original data].",
+    "lastUpdated": "2025-11-13",
+    "title": "Territorial vs. consumption-based CO₂ emissions per capita",
+    "license": "owid",
+    "upstreamLicense": "cc-by-4.0"
+  },
+  "unit": "t CO₂ par habitant",
+  "frequency": "annual",
+  "lastObservation": "2024",
+  "seriesLabels": {
+    "territorial": "Territorial (production)",
+    "empreinte": "Empreinte (consommation)"
+  },
+  "script": "scripts/fetch/owid.mjs",
+  "notes": "Compare les émissions produites sur le territoire français aux émissions liées à la consommation des Français (importations incluses, exportations déduites), par habitant.",
+  "fetchedAt": "2026-09-20"
+}

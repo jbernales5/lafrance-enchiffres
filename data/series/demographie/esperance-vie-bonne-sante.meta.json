@@ -1,0 +1,39 @@
+{
+  "source": {
+    "publisher": "Eurostat",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/hlth_hlye/default/table",
+    "downloadUrls": [
+      "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/hlth_hlye?format=JSON&lang=EN&geo=FR&geo=DE&geo=IT&geo=ES&geo=EU27_2020&unit=YR&hlth_hle=HLY_Y0&hlth_hle=HLY_Y65&sex=F&sex=M&sinceTimePeriod=2004"
+    ],
+    "dataset": "hlth_hlye",
+    "license": "eurostat"
+  },
+  "unit": "années",
+  "frequency": "annual",
+  "seriesLabels": {
+    "FRA-naissance-femmes": "France — à la naissance, femmes",
+    "FRA-naissance-hommes": "France — à la naissance, hommes",
+    "FRA-65-femmes": "France — à 65 ans, femmes",
+    "FRA-65-hommes": "France — à 65 ans, hommes",
+    "DEU-naissance-femmes": "Allemagne — à la naissance, femmes",
+    "DEU-naissance-hommes": "Allemagne — à la naissance, hommes",
+    "DEU-65-femmes": "Allemagne — à 65 ans, femmes",
+    "DEU-65-hommes": "Allemagne — à 65 ans, hommes",
+    "ITA-naissance-femmes": "Italie — à la naissance, femmes",
+    "ITA-naissance-hommes": "Italie — à la naissance, hommes",
+    "ITA-65-femmes": "Italie — à 65 ans, femmes",
+    "ITA-65-hommes": "Italie — à 65 ans, hommes",
+    "ESP-naissance-femmes": "Espagne — à la naissance, femmes",
+    "ESP-naissance-hommes": "Espagne — à la naissance, hommes",
+    "ESP-65-femmes": "Espagne — à 65 ans, femmes",
+    "ESP-65-hommes": "Espagne — à 65 ans, hommes",
+    "EU27-naissance-femmes": "Union européenne (27) — à la naissance, femmes",
+    "EU27-naissance-hommes": "Union européenne (27) — à la naissance, hommes",
+    "EU27-65-femmes": "Union européenne (27) — à 65 ans, femmes",
+    "EU27-65-hommes": "Union européenne (27) — à 65 ans, hommes"
+  },
+  "script": "scripts/fetch/eurostat.mjs",
+  "notes": "Années de vie en bonne santé (healthy life years) : nombre d'années qu'une personne peut espérer vivre sans limitation d'activité dans les gestes de la vie quotidienne, à la naissance et à 65 ans. L'indicateur combine les tables de mortalité et la question sur les limitations d'activité de l'enquête EU-SILC ; c'est un indicateur structurel européen, sensible à la façon dont les personnes déclarent leurs limitations.",
+  "lastObservation": "2024",
+  "fetchedAt": "2026-09-20"
+}

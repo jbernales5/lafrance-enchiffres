@@ -1,0 +1,20 @@
+{
+  "source": {
+    "publisher": "Insee",
+    "url": "https://www.insee.fr/fr/statistiques/2381757",
+    "downloadUrls": [
+      "https://www.insee.fr/fr/statistiques/fichier/2381757/demo-etran-part-pop-etran-immig.xlsx"
+    ],
+    "dataset": "Population immigrée et étrangère en France — Figure 1",
+    "license": "etalab-2.0"
+  },
+  "unit": "% de la population",
+  "frequency": "annual",
+  "seriesLabels": {
+    "part-immigres": "Part des immigrés dans la population"
+  },
+  "notes": "Un immigré est une personne née étrangère à l'étranger et résidant en France ; certains ont depuis acquis la nationalité française, et les personnes nées françaises à l'étranger n'en font pas partie. Recensements de la population puis estimations annuelles : les points sont espacés jusqu'en 1999 (années de recensement), annuels ensuite à partir de 2006. Champ : France métropolitaine de 1921 à 1982 ; France hors Mayotte de 1990 à 2013 et y compris Mayotte à partir de 2014. L'amélioration du protocole de collecte du recensement rend les années 2024 et 2025 non directement comparables aux précédentes, et les deux dernières sont provisoires.",
+  "lastObservation": "2025",
+  "script": "scripts/fetch/insee.mjs",
+  "fetchedAt": "2026-09-20"
+}

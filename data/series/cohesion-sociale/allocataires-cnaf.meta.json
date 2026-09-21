@@ -1,0 +1,23 @@
+{
+  "source": {
+    "publisher": "CNAF",
+    "url": "https://data.caf.fr/explore/dataset/s_ben_nat/information/",
+    "downloadUrls": [
+      "https://data.caf.fr/api/explore/v2.1/catalog/datasets/s_ben_nat/records?select=dtreffre,indfoy_rsa,indfoy_ppa,indfoy_ndural&order_by=dtreffre%20asc&limit=100&offset=0"
+    ],
+    "howToObtain": "L'API limite chaque réponse à 100 enregistrements : le script parcourt les pages successives en incrémentant le paramètre `offset` jusqu'à épuisement du jeu.",
+    "dataset": "s_ben_nat — Toutes prestations - Répartition des allocataires selon la prestation [National]",
+    "license": "etalab-2.0"
+  },
+  "unit": "milliers d'allocataires",
+  "frequency": "annual",
+  "seriesLabels": {
+    "rsa": "RSA",
+    "prime-activite": "Prime d'activité",
+    "apl": "Aides au logement (APL, ALF, ALS)"
+  },
+  "notes": "Foyers allocataires des caisses d'allocations familiales en décembre de chaque année, France entière ; les allocataires du régime agricole (MSA) ne sont pas comptés. « Aides au logement » agrège l'APL, l'ALF et l'ALS. Un foyer peut percevoir plusieurs prestations : les trois séries ne s'additionnent pas. La série mensuelle CNAF ne commence qu'en juin 2016.",
+  "lastObservation": "2025",
+  "script": "scripts/fetch/france.mjs",
+  "fetchedAt": "2026-09-20"
+}

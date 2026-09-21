@@ -1,0 +1,25 @@
+{
+  "source": {
+    "publisher": "Our World in Data",
+    "upstream": "Copernicus Climate Change Service (2026)",
+    "url": "https://ourworldindata.org/grapher/average-monthly-surface-temperature",
+    "downloadUrls": [
+      "https://ourworldindata.org/grapher/average-monthly-surface-temperature.csv?v=1&csvType=filtered&useColumnShortNames=true&tab=line&time=earliest..latest&country=FRA"
+    ],
+    "dataset": "average-monthly-surface-temperature",
+    "citation": "Contains modified Copernicus Climate Change Service information (2026) – with major processing by Our World in Data. “Monthly average” [dataset]. Contains modified Copernicus Climate Change Service information, “ERA5 monthly averaged data on single levels from 1940 to present 2” [original data].",
+    "lastUpdated": "2026-09-11",
+    "title": "Average monthly surface temperature",
+    "license": "owid",
+    "upstreamLicense": "a-confirmer"
+  },
+  "unit": "°C, moyenne annuelle",
+  "frequency": "annual",
+  "lastObservation": "2025",
+  "seriesLabels": {
+    "FRA": "France"
+  },
+  "script": "scripts/fetch/owid.mjs",
+  "notes": "Température de l'air à deux mètres du sol, moyenne annuelle des douze moyennes mensuelles calculées par Copernicus (ERA5) pour la France ; seules les années complètes sont retenues.",
+  "fetchedAt": "2026-09-20"
+}

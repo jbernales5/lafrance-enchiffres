@@ -1,0 +1,22 @@
+{
+  "source": {
+    "publisher": "Insee",
+    "url": "https://www.insee.fr/fr/statistiques/serie/011818564",
+    "downloadUrls": [
+      "https://api.insee.fr/series/BDM/V1/data/SERIES_BDM/011818564"
+    ],
+    "idbanks": [
+      "011818564"
+    ],
+    "license": "etalab-2.0"
+  },
+  "unit": "milliers de personnes",
+  "frequency": "quarterly",
+  "seriesLabels": {
+    "halo": "Halo autour du chômage"
+  },
+  "notes": "Personnes inactives souhaitant travailler mais non classées au chômage au sens du BIT (non disponibles ou sans recherche active), France entière, données CVS de l'enquête Emploi.",
+  "lastObservation": "2026-Q2",
+  "script": "scripts/fetch/insee.mjs",
+  "fetchedAt": "2026-09-20"
+}

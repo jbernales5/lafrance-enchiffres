@@ -1,0 +1,29 @@
+{
+  "source": {
+    "publisher": "Our World in Data",
+    "upstream": "The Military Balance - International Institute for Strategic Studies, via World Bank (2026)",
+    "url": "https://ourworldindata.org/grapher/armed-forces-personnel",
+    "downloadUrls": [
+      "https://ourworldindata.org/grapher/armed-forces-personnel.csv?v=1&csvType=filtered&useColumnShortNames=true&tab=line&time=earliest..latest&country=FRA~DEU~GBR~ITA~POL"
+    ],
+    "dataset": "armed-forces-personnel",
+    "citation": "The Military Balance - International Institute for Strategic Studies, via World Bank (2026) – processed by Our World in Data. “Armed forces personnel, total” [dataset]. The Military Balance - International Institute for Strategic Studies, via World Bank, “World Development Indicators 129” [original data].",
+    "lastUpdated": "2026-07-27",
+    "title": "Armed forces personnel",
+    "license": "owid",
+    "upstreamLicense": "a-confirmer"
+  },
+  "unit": "milliers de personnes",
+  "frequency": "annual",
+  "lastObservation": "2020",
+  "seriesLabels": {
+    "FRA": "France",
+    "DEU": "Allemagne",
+    "GBR": "Royaume-Uni",
+    "ITA": "Italie",
+    "POL": "Pologne"
+  },
+  "script": "scripts/fetch/owid.mjs",
+  "notes": "Personnels d'active des forces armées, forces paramilitaires incluses, d'après The Military Balance (IISS) via la Banque mondiale.",
+  "fetchedAt": "2026-09-20"
+}

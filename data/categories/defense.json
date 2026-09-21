@@ -1,0 +1,128 @@
+{
+  "slug": "defense",
+  "order": 5,
+  "title": "Défense et autonomie stratégique",
+  "short": "Défense et autonomie",
+  "lead": "Ce que la France consacre à sa défense, en part de richesse et en montants, avec ses voisins en regard. L'autonomie ne se joue pas qu'au militaire : la dépendance énergétique est dans le même thème.",
+  "keyFigure": {
+    "chart": "depenses-pib",
+    "label": "dépenses militaires (SIPRI)",
+    "unit": "% du PIB"
+  },
+  "cautions": [
+    "Trois périmètres coexistent : le SIPRI (série longue mondiale), l'OTAN (engagement des 2 %, puis 3,5 %) et les comptes nationaux (COFOG). Ils ne comptent ni les pensions ni la gendarmerie de la même façon, et leurs chiffres ne se comparent pas entre eux.",
+    "Le pourcentage du PIB flatte les pays riches ; les dollars constants remettent les niveaux à l'échelle. Les deux graphes se lisent ensemble.",
+    "Les effectifs incluent les forces paramilitaires selon la définition de la Banque mondiale, et la série s'arrête en 2020."
+  ],
+  "charts": [
+    {
+      "id": "depenses-pib",
+      "title": "Dépenses militaires",
+      "subtitle": "En % du PIB. Repères : 2 % (ancien objectif OTAN) et 3,5 % (objectif 2035).",
+      "file": "defense/depenses-militaires-pib",
+      "perspectives": {
+        "france": [
+          "FRA"
+        ],
+        "europe": [
+          "FRA",
+          "DEU",
+          "GBR",
+          "ITA",
+          "POL"
+        ],
+        "monde": [
+          "FRA",
+          "USA",
+          "RUS",
+          "CHN"
+        ]
+      },
+      "thresholds": [
+        {
+          "value": 2,
+          "label": "2 %"
+        },
+        {
+          "value": 3.5,
+          "label": "3,5 %"
+        }
+      ],
+      "zeroBased": true
+    },
+    {
+      "id": "depenses-usd",
+      "title": "Dépenses militaires en dollars constants",
+      "subtitle": "Milliards de dollars de 2024",
+      "file": "defense/depenses-militaires-usd",
+      "perspectives": {
+        "france": [
+          "FRA"
+        ],
+        "europe": [
+          "FRA",
+          "DEU",
+          "GBR",
+          "ITA",
+          "POL"
+        ],
+        "monde": [
+          "FRA",
+          "USA",
+          "RUS",
+          "CHN"
+        ]
+      },
+      "zeroBased": true
+    },
+    {
+      "id": "depenses-cofog",
+      "title": "Défense dans les comptes publics",
+      "subtitle": "Dépense des administrations publiques en fonction « Défense », en % du PIB",
+      "file": "defense/depenses-cofog",
+      "note": "Périmètre des comptes nationaux (COFOG GF02), le même que celui du diagramme des dépenses publiques. Il ne correspond pas au chiffre annoncé par l'OTAN, qui compte en plus une partie des pensions militaires et l'aide militaire versée : les deux ne se comparent pas."
+    },
+    {
+      "id": "dependance-energetique",
+      "title": "Dépendance énergétique",
+      "subtitle": "Importations nettes rapportées à la consommation brute d'énergie, en %",
+      "file": "defense/dependance-energetique",
+      "perspectives": {
+        "france": [
+          "FRA"
+        ],
+        "europe": [
+          "FRA",
+          "DEU",
+          "ITA",
+          "ESP",
+          "EU27"
+        ]
+      },
+      "zeroBased": true
+    },
+    {
+      "id": "effectifs",
+      "title": "Effectifs des forces armées",
+      "subtitle": "Milliers de personnes, forces paramilitaires comprises",
+      "file": "defense/effectifs-armees",
+      "perspectives": {
+        "france": [
+          "FRA"
+        ],
+        "europe": [
+          "FRA",
+          "DEU",
+          "GBR",
+          "ITA",
+          "POL"
+        ]
+      },
+      "zeroBased": true
+    }
+  ],
+  "hero": {
+    "chart": "depenses-pib",
+    "perspective": "europe"
+  }
+}

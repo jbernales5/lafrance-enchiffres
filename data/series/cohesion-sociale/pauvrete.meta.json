@@ -1,0 +1,25 @@
+{
+  "source": {
+    "publisher": "Insee",
+    "url": "https://www.insee.fr/fr/statistiques/9019316",
+    "downloadUrls": [
+      "https://api.insee.fr/melodi/data/DS_ERFS_RETROPOLE?ERFS_MEASURE=PR_MD60&ERFS_MEASURE=PR_MD50&maxResult=5000"
+    ],
+    "dataset": "DS_ERFS_RETROPOLE",
+    "codes": [
+      "PR_MD60",
+      "PR_MD50"
+    ],
+    "license": "etalab-2.0"
+  },
+  "unit": "% de la population",
+  "frequency": "annual",
+  "seriesLabels": {
+    "taux-60": "Seuil à 60 % du niveau de vie médian",
+    "taux-50": "Seuil à 50 % du niveau de vie médian"
+  },
+  "notes": "Enquête Revenus fiscaux et sociaux (ERFS), France métropolitaine, personnes vivant dans un ménage ordinaire, séries rétropolées pour tenir compte des ruptures méthodologiques ; la dernière année est provisoire.",
+  "lastObservation": "2024",
+  "script": "scripts/fetch/insee.mjs",
+  "fetchedAt": "2026-09-20"
+}

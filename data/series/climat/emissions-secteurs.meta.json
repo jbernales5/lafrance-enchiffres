@@ -1,0 +1,27 @@
+{
+  "source": {
+    "publisher": "Eurostat",
+    "url": "https://ec.europa.eu/eurostat/databrowser/view/env_air_gge/default/table",
+    "downloadUrls": [
+      "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/env_air_gge?format=JSON&lang=EN&geo=FR&airpol=GHG&unit=MIO_T&src_crf=CRF1A1&src_crf=CRF1A2&src_crf=CRF1A3&src_crf=CRF1A4&src_crf=CRF2&src_crf=CRF3&src_crf=CRF5&src_crf=CRF4&sinceTimePeriod=1990"
+    ],
+    "dataset": "env_air_gge",
+    "license": "eurostat"
+  },
+  "unit": "Mt CO₂e",
+  "frequency": "annual",
+  "seriesLabels": {
+    "energie": "Production d'énergie",
+    "industrie-combustion": "Industrie manufacturière et construction (combustion)",
+    "transports": "Transports",
+    "batiments": "Résidentiel, tertiaire et agriculture (combustion)",
+    "procedes-industriels": "Procédés industriels et usage de produits",
+    "agriculture": "Agriculture (hors combustion)",
+    "dechets": "Déchets",
+    "utcatf": "Terres et forêts (UTCATF, puits de carbone)"
+  },
+  "script": "scripts/fetch/eurostat.mjs",
+  "notes": "Inventaire national des gaz à effet de serre soumis par la France à la CCNUCC, compilé par l'Agence européenne pour l'environnement et publié par Eurostat sous la nomenclature CRF. Émissions produites sur le territoire : les émissions importées n'y figurent pas. L'UTCATF est un solde, négatif quand les terres et les forêts absorbent plus qu'elles n'émettent ; il n'est pas compté dans le total des sept autres secteurs.",
+  "lastObservation": "2024",
+  "fetchedAt": "2026-09-20"
+}

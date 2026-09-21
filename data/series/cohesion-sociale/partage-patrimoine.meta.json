@@ -1,0 +1,25 @@
+{
+  "source": {
+    "publisher": "World Inequality Database (WID.world)",
+    "url": "https://wid.world/country/france/",
+    "downloadUrls": [
+      "https://wid.world/data/"
+    ],
+    "howToObtain": "Export pays « France » (bouton « Download data »). Le fichier brut fait 68 Mo et n'est pas redistribué : seul l'extrait des variables utilisées est versionné, dans data/sources-manuelles/wid-france-extrait.csv.",
+    "dataset": "shwealj992, France, percentiles p0p50, p50p90, p90p100, p99p100",
+    "citation": "World Inequality Database (WID.world), export France. Séries construites par Thomas Piketty, Emmanuel Saez, Gabriel Zucman et l'équipe du World Inequality Lab à partir des comptes nationaux, des déclarations fiscales et des enquêtes ménages (méthode « distributional national accounts »).",
+    "license": "a-confirmer"
+  },
+  "unit": "% du patrimoine net",
+  "frequency": "annual",
+  "seriesLabels": {
+    "bottom50": "50 % du bas",
+    "middle40": "40 % du milieu",
+    "top10": "10 % du haut",
+    "top1": "1 % du haut"
+  },
+  "script": "scripts/manual/wid.mjs",
+  "notes": "Patrimoine net personnel (actifs financiers et immobiliers, moins les dettes) par adulte, réparti à parts égales au sein du couple. Le 1 % du haut est inclus dans le 10 % du haut. L'export utilisé ne couvre que la France : la comparaison européenne demande de télécharger le même export pour chaque pays.",
+  "lastObservation": "2024",
+  "fetchedAt": "2026-09-20"
+}

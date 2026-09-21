@@ -1,0 +1,34 @@
+{
+  "source": {
+    "publisher": "Our World in Data",
+    "upstream": "Ember (2026)",
+    "url": "https://ourworldindata.org/grapher/carbon-intensity-electricity",
+    "downloadUrls": [
+      "https://ourworldindata.org/grapher/carbon-intensity-electricity.csv?v=1&csvType=filtered&useColumnShortNames=true&tab=line&time=earliest..latest&country=FRA~DEU~ITA~ESP~GBR~POL~USA~CHN~IND~JPN"
+    ],
+    "dataset": "carbon-intensity-electricity",
+    "citation": "Ember (2026) – with major processing by Our World in Data. “Lifecycle carbon intensity of electricity generation – Ember” [dataset]. Ember, “Yearly Electricity Data Europe”; Ember, “Yearly Electricity Data” [original data].",
+    "lastUpdated": "2026-06-30",
+    "title": "Lifecycle carbon intensity of electricity",
+    "license": "owid",
+    "upstreamLicense": "cc-by-4.0"
+  },
+  "unit": "g CO₂ par kWh",
+  "frequency": "annual",
+  "lastObservation": "2025",
+  "seriesLabels": {
+    "FRA": "France",
+    "DEU": "Allemagne",
+    "ITA": "Italie",
+    "ESP": "Espagne",
+    "GBR": "Royaume-Uni",
+    "POL": "Pologne",
+    "USA": "États-Unis",
+    "CHN": "Chine",
+    "IND": "Inde",
+    "JPN": "Japon"
+  },
+  "script": "scripts/fetch/owid.mjs",
+  "notes": "Grammes de CO₂ émis pour produire un kilowattheure d'électricité, sur l'ensemble du cycle de vie des installations (source Ember).",
+  "fetchedAt": "2026-09-20"
+}
