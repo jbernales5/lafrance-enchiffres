@@ -288,7 +288,7 @@ export default function MethodePage() {
                 .at(-1)
               return (
                 <TableRow key={s.publisher}>
-                  <TableCell>
+                  <TableCell className="whitespace-normal">
                     <a
                       href={s.url}
                       target="_blank"
@@ -298,8 +298,22 @@ export default function MethodePage() {
                       {s.publisher}
                       <IconExternalLink className="size-3" />
                     </a>
-                    {s.upstream.length ? (
-                      <span className="block text-xs text-muted-foreground">
+                    {s.upstream.length > 2 ? (
+                      <details className="group/up text-xs text-muted-foreground">
+                        <summary className="w-fit cursor-pointer list-none underline-offset-3 hover:text-foreground hover:underline [&::-webkit-details-marker]:hidden">
+                          d&apos;après {s.upstream.length} producteurs
+                          <span className="ml-1 inline-block transition-transform group-open/up:rotate-90">
+                            ›
+                          </span>
+                        </summary>
+                        <ul className="mt-1 grid max-w-md gap-0.5 text-pretty">
+                          {s.upstream.map((u) => (
+                            <li key={u}>{u}</li>
+                          ))}
+                        </ul>
+                      </details>
+                    ) : s.upstream.length ? (
+                      <span className="block max-w-md text-xs text-pretty text-muted-foreground">
                         d&apos;après {s.upstream.join(" · ")}
                       </span>
                     ) : null}

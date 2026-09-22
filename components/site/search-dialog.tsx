@@ -346,10 +346,10 @@ export function SearchDialog({
 
           <div className="flex flex-col gap-3 border-t bg-muted/40 px-4 py-3 sm:flex-row sm:items-center sm:gap-4">
             <p className="text-sm text-pretty sm:min-w-0 sm:flex-1">
-              <span className="font-medium">
+              <span className="block font-medium">
                 Vous ne trouvez pas ce que vous cherchez&#8239;?
-              </span>{" "}
-              <span className="text-muted-foreground">
+              </span>
+              <span className="mt-0.5 block text-muted-foreground">
                 Proposez-le : il sera publié si une source officielle existe.
               </span>
             </p>

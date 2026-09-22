@@ -25,7 +25,7 @@
         "year": "2026",
         "file": "finances-publiques/sankey-2026-prevision"
       },
-      "note": "Le flux sombre est le déficit, le flux brun les intérêts de la dette, sortis des services publics généraux où la nomenclature COFOG les range. Le survol d'une fonction montre son détail."
+      "note": "Le flux gris est le déficit, le flux brun les intérêts de la dette, sortis des services publics généraux où la nomenclature COFOG les range. Le survol d'une fonction montre son détail."
     },
     {
       "id": "dette",

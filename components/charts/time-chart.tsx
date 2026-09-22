@@ -84,6 +84,37 @@ function toRows(rows: SeriesRow[], series: string[]): Row[] {
   })
 }
 
+/** The stroke of a series as drawn on the chart: legend and tooltip share it, so dashes read the same everywhere. */
+function StrokeSwatch({
+  color,
+  dash,
+  className,
+}: {
+  color?: string
+  dash?: string
+  className?: string
+}) {
+  return (
+    <svg
+      aria-hidden
+      width="18"
+      height="6"
+      className={className ? `shrink-0 ${className}` : "shrink-0"}
+    >
+      <line
+        x1="0"
+        y1="3"
+        x2="18"
+        y2="3"
+        stroke={color}
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeDasharray={dash}
+      />
+    </svg>
+  )
+}
+
 /** Clickable legend: one click hides a series, another brings it back. Identity never depends on color alone. */
 function LegendContent({
   payload,
@@ -113,18 +144,7 @@ function LegendContent({
               title={off ? "Afficher la série" : "Masquer la série"}
               className={`flex items-center gap-1.5 rounded-full px-2 py-0.5 transition-colors hover:bg-muted ${off ? "line-through opacity-45" : ""}`}
             >
-              <svg aria-hidden width="18" height="6" className="shrink-0">
-                <line
-                  x1="0"
-                  y1="3"
-                  x2="18"
-                  y2="3"
-                  stroke={item.color}
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeDasharray={dashFor(key, series)}
-                />
-              </svg>
+              <StrokeSwatch color={item.color} dash={dashFor(key, series)} />
               {labels[key] ?? key}
             </button>
           </li>
@@ -139,6 +159,7 @@ function TooltipContent({
   payload,
   label,
   labels,
+  series,
   unit,
 }: {
   active?: boolean
@@ -149,6 +170,7 @@ function TooltipContent({
   }>
   label?: unknown
   labels: Record<string, string>
+  series: string[]
   unit?: string
 }) {
   if (!active || !payload?.length) return null
@@ -168,10 +190,10 @@ function TooltipContent({
           const key = String(item.dataKey ?? "")
           return (
             <div key={key} className="flex items-start gap-2">
-              <span
-                aria-hidden
-                className="mt-1.5 inline-block h-0.5 w-3 shrink-0 rounded-full"
-                style={{ backgroundColor: item.color }}
+              <StrokeSwatch
+                color={item.color}
+                dash={dashFor(key, series)}
+                className="mt-1"
               />
               <span className="shrink-0 font-mono font-semibold text-foreground tabular-nums">
                 {formatValue(item.value as number)}
@@ -366,7 +388,7 @@ export function TimeChart({
         itemSorter={(item: { dataKey?: unknown }) =>
           series.indexOf(String(item.dataKey))
         }
-        content={<TooltipContent labels={labels} unit={unit} />}
+        content={<TooltipContent labels={labels} series={series} unit={unit} />}
       />
       {showLegend ? (
         <ChartLegend
